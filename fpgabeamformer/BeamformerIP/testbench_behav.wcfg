@@ -1,0 +1,2625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="c1_constants" />
+            <top_module name="c2_filenames" />
+            <top_module name="compound_imaging_origin_constants" />
+            <top_module name="cos_constants" />
+            <top_module name="glbl" />
+            <top_module name="nt_constants" />
+            <top_module name="offset_constants" />
+            <top_module name="radius_constants" />
+            <top_module name="sin_constants" />
+            <top_module name="testbench" />
+            <top_module name="tx_offsets_constants" />
+            <top_module name="types_pkg" />
+            <top_module name="x_constants" />
+            <top_module name="y_constants" />
+            <top_module name="zone_imaging_origin_constants" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="4009136666666fs"></ZoomStartTime>
+      <ZoomEndTime time="11429136666667fs"></ZoomEndTime>
+      <Cursor1Time time="10192470000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="542" />
+   <wave_markers>
+      <marker time="5253385609000" label="" />
+      <marker time="3289580000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/testbench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider279">
+      <obj_property name="label">Testbench</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/returned_data" type="array">
+      <obj_property name="ElementShortName">returned_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">returned_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/nappe_counter" type="array">
+      <obj_property name="ElementShortName">nappe_counter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">nappe_counter[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/elevation_pointer" type="array">
+      <obj_property name="ElementShortName">elevation_pointer[-1:0]</obj_property>
+      <obj_property name="ObjectShortName">elevation_pointer[-1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/azimuth_pointer" type="array">
+      <obj_property name="ElementShortName">azimuth_pointer[5:0]</obj_property>
+      <obj_property name="ObjectShortName">azimuth_pointer[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/echo_data" type="array">
+      <obj_property name="ElementShortName">echo_data[2635:0][63:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">echo_data[2635:0][63:0][31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/returned_data" type="array">
+      <obj_property name="ElementShortName">returned_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">returned_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/old_returned_data" type="array">
+      <obj_property name="ElementShortName">old_returned_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">old_returned_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/sample_index" type="array">
+      <obj_property name="ElementShortName">sample_index[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_index[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/transducer_index" type="array">
+      <obj_property name="ElementShortName">transducer_index[5:0]</obj_property>
+      <obj_property name="ObjectShortName">transducer_index[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/s" type="array">
+      <obj_property name="ElementShortName">s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/t" type="array">
+      <obj_property name="ElementShortName">t[31:0]</obj_property>
+      <obj_property name="ObjectShortName">t[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/echo_data[0][0]" type="array">
+      <obj_property name="ElementShortName">[0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/voxel_elevation_index" type="array">
+      <obj_property name="ElementShortName">voxel_elevation_index[31:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_elevation_index[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/voxel_azimuth_index" type="array">
+      <obj_property name="ElementShortName">voxel_azimuth_index[31:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_azimuth_index[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/zone" type="array">
+      <obj_property name="ElementShortName">zone[0:0][63:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">zone[0:0][63:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/fifo_data_count" type="array">
+      <obj_property name="ElementShortName">fifo_data_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data_count[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider279">
+      <obj_property name="label">Reorder Queue</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/fifo_axis_aresetn" type="logic">
+      <obj_property name="ElementShortName">fifo_axis_aresetn</obj_property>
+      <obj_property name="ObjectShortName">fifo_axis_aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/fifo_axis_aclk" type="logic">
+      <obj_property name="ElementShortName">fifo_axis_aclk</obj_property>
+      <obj_property name="ObjectShortName">fifo_axis_aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/fifo_axis_tready" type="logic">
+      <obj_property name="ElementShortName">fifo_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">fifo_axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/fifo_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">fifo_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">fifo_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/fifo_axis_tdata" type="array">
+      <obj_property name="ElementShortName">fifo_axis_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_axis_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/chan_data" type="array">
+      <obj_property name="ElementShortName">chan_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">chan_data[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/stall" type="logic">
+      <obj_property name="ElementShortName">stall</obj_property>
+      <obj_property name="ObjectShortName">stall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/fifo_data_cur" type="array">
+      <obj_property name="ElementShortName">fifo_data_cur[63:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data_cur[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/fifo_data_next" type="array">
+      <obj_property name="ElementShortName">fifo_data_next[63:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data_next[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/wrap_around_cur" type="array">
+      <obj_property name="ElementShortName">wrap_around_cur[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wrap_around_cur[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/wrap_around_next" type="array">
+      <obj_property name="ElementShortName">wrap_around_next[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wrap_around_next[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/cnt_cur" type="array">
+      <obj_property name="ElementShortName">cnt_cur[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_cur[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/cnt_next" type="array">
+      <obj_property name="ElementShortName">cnt_next[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_next[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/first_cur" type="logic">
+      <obj_property name="ElementShortName">first_cur</obj_property>
+      <obj_property name="ObjectShortName">first_cur</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/first_next" type="logic">
+      <obj_property name="ElementShortName">first_next</obj_property>
+      <obj_property name="ObjectShortName">first_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/valid_next" type="logic">
+      <obj_property name="ElementShortName">valid_next</obj_property>
+      <obj_property name="ObjectShortName">valid_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/valid_cur" type="logic">
+      <obj_property name="ElementShortName">valid_cur</obj_property>
+      <obj_property name="ObjectShortName">valid_cur</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/FIFO_WIDTH" type="other">
+      <obj_property name="ElementShortName">FIFO_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">FIFO_WIDTH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/reorder_chan_inst/FIFO_CHAN_WIDTH" type="other">
+      <obj_property name="ElementShortName">FIFO_CHAN_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">FIFO_CHAN_WIDTH</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider279">
+      <obj_property name="label">AXI FIFO Interface</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/fifo_data_count" type="array">
+      <obj_property name="ElementShortName">fifo_data_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data_count[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/use_aurora_interface" type="logic">
+      <obj_property name="ElementShortName">use_aurora_interface</obj_property>
+      <obj_property name="ObjectShortName">use_aurora_interface</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/stall_aurora_fifo" type="logic">
+      <obj_property name="ElementShortName">stall_aurora_fifo</obj_property>
+      <obj_property name="ObjectShortName">stall_aurora_fifo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/valid_aurora_fifo" type="logic">
+      <obj_property name="ElementShortName">valid_aurora_fifo</obj_property>
+      <obj_property name="ObjectShortName">valid_aurora_fifo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/data_aurora_fifo" type="array">
+      <obj_property name="ElementShortName">data_aurora_fifo[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_aurora_fifo[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider279">
+      <obj_property name="label">Master AXI Interface</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/fifo_data" type="array">
+      <obj_property name="ElementShortName">fifo_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">2</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/fifo_output_valid" type="logic">
+      <obj_property name="ElementShortName">fifo_output_valid</obj_property>
+      <obj_property name="ObjectShortName">fifo_output_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/fifo_output_ready" type="logic">
+      <obj_property name="ElementShortName">fifo_output_ready</obj_property>
+      <obj_property name="ObjectShortName">fifo_output_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/voxel_fifo" type="array">
+      <obj_property name="ElementShortName">voxel_fifo[7:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_fifo[7:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/voxel_fifo_read_pointer" type="array">
+      <obj_property name="ElementShortName">voxel_fifo_read_pointer[2:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_fifo_read_pointer[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/voxel_fifo_write_pointer" type="array">
+      <obj_property name="ElementShortName">voxel_fifo_write_pointer[2:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_fifo_write_pointer[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/voxel_fifo_data_valid" type="logic">
+      <obj_property name="ElementShortName">voxel_fifo_data_valid</obj_property>
+      <obj_property name="ObjectShortName">voxel_fifo_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/compound_not_zone_imaging" type="logic">
+      <obj_property name="ElementShortName">compound_not_zone_imaging</obj_property>
+      <obj_property name="ObjectShortName">compound_not_zone_imaging</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/saved_voxels" type="array">
+      <obj_property name="ElementShortName">saved_voxels[12:0]</obj_property>
+      <obj_property name="ObjectShortName">saved_voxels[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/saved_nappes" type="array">
+      <obj_property name="ElementShortName">saved_nappes[15:0]</obj_property>
+      <obj_property name="ObjectShortName">saved_nappes[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_ACLK" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ACLK</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_ARESETN" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARESETN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_AWID" type="array">
+      <obj_property name="ElementShortName">M_AXI_AWID[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWID[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_AWADDR" type="array">
+      <obj_property name="ElementShortName">M_AXI_AWADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_AWLEN" type="array">
+      <obj_property name="ElementShortName">M_AXI_AWLEN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWLEN[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_AWSIZE" type="array">
+      <obj_property name="ElementShortName">M_AXI_AWSIZE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWSIZE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_AWBURST" type="array">
+      <obj_property name="ElementShortName">M_AXI_AWBURST[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWBURST[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_AWLOCK" type="logic">
+      <obj_property name="ElementShortName">M_AXI_AWLOCK</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWLOCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_AWCACHE" type="array">
+      <obj_property name="ElementShortName">M_AXI_AWCACHE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWCACHE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_AWPROT" type="array">
+      <obj_property name="ElementShortName">M_AXI_AWPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWPROT[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_AWQOS" type="array">
+      <obj_property name="ElementShortName">M_AXI_AWQOS[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWQOS[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_AWVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_AWREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_WDATA" type="array">
+      <obj_property name="ElementShortName">M_AXI_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_WSTRB" type="array">
+      <obj_property name="ElementShortName">M_AXI_WSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WSTRB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_WLAST" type="logic">
+      <obj_property name="ElementShortName">M_AXI_WLAST</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WLAST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_WVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_WVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_WREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_BRESP" type="array">
+      <obj_property name="ElementShortName">M_AXI_BRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_BRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_BVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_BVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_BVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_BREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_BREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_BREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_ARID" type="array">
+      <obj_property name="ElementShortName">M_AXI_ARID[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARID[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_ARADDR" type="array">
+      <obj_property name="ElementShortName">M_AXI_ARADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_ARLEN" type="array">
+      <obj_property name="ElementShortName">M_AXI_ARLEN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARLEN[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_ARSIZE" type="array">
+      <obj_property name="ElementShortName">M_AXI_ARSIZE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARSIZE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_ARBURST" type="array">
+      <obj_property name="ElementShortName">M_AXI_ARBURST[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARBURST[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_ARLOCK" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ARLOCK</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARLOCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_ARCACHE" type="array">
+      <obj_property name="ElementShortName">M_AXI_ARCACHE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARCACHE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_ARPROT" type="array">
+      <obj_property name="ElementShortName">M_AXI_ARPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARPROT[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_ARQOS" type="array">
+      <obj_property name="ElementShortName">M_AXI_ARQOS[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARQOS[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_ARVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_ARREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_RID" type="array">
+      <obj_property name="ElementShortName">M_AXI_RID[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RID[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_RDATA" type="array">
+      <obj_property name="ElementShortName">M_AXI_RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_RRESP" type="array">
+      <obj_property name="ElementShortName">M_AXI_RRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_RLAST" type="logic">
+      <obj_property name="ElementShortName">M_AXI_RLAST</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RLAST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_RVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_RVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/M_AXI_RREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_RREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/axi_awaddr" type="array">
+      <obj_property name="ElementShortName">axi_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/axi_awvalid" type="logic">
+      <obj_property name="ElementShortName">axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/axi_wdata" type="array">
+      <obj_property name="ElementShortName">axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/axi_wlast" type="logic">
+      <obj_property name="ElementShortName">axi_wlast</obj_property>
+      <obj_property name="ObjectShortName">axi_wlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/axi_wvalid" type="logic">
+      <obj_property name="ElementShortName">axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/axi_bready" type="logic">
+      <obj_property name="ElementShortName">axi_bready</obj_property>
+      <obj_property name="ObjectShortName">axi_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/axi_araddr" type="array">
+      <obj_property name="ElementShortName">axi_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_araddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/axi_arvalid" type="logic">
+      <obj_property name="ElementShortName">axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/axi_rready" type="logic">
+      <obj_property name="ElementShortName">axi_rready</obj_property>
+      <obj_property name="ObjectShortName">axi_rready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/write_index" type="array">
+      <obj_property name="ElementShortName">write_index[3:0]</obj_property>
+      <obj_property name="ObjectShortName">write_index[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/read_index" type="array">
+      <obj_property name="ElementShortName">read_index[3:0]</obj_property>
+      <obj_property name="ObjectShortName">read_index[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/burst_size_bytes" type="array">
+      <obj_property name="ElementShortName">burst_size_bytes[5:0]</obj_property>
+      <obj_property name="ObjectShortName">burst_size_bytes[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/burst_write_active" type="logic">
+      <obj_property name="ElementShortName">burst_write_active</obj_property>
+      <obj_property name="ObjectShortName">burst_write_active</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/burst_read_active" type="logic">
+      <obj_property name="ElementShortName">burst_read_active</obj_property>
+      <obj_property name="ObjectShortName">burst_read_active</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/write_resp_error" type="logic">
+      <obj_property name="ElementShortName">write_resp_error</obj_property>
+      <obj_property name="ObjectShortName">write_resp_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/read_resp_error" type="logic">
+      <obj_property name="ElementShortName">read_resp_error</obj_property>
+      <obj_property name="ObjectShortName">read_resp_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/wnext" type="logic">
+      <obj_property name="ElementShortName">wnext</obj_property>
+      <obj_property name="ObjectShortName">wnext</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/rnext" type="logic">
+      <obj_property name="ElementShortName">rnext</obj_property>
+      <obj_property name="ObjectShortName">rnext</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/start_burst_write" type="logic">
+      <obj_property name="ElementShortName">start_burst_write</obj_property>
+      <obj_property name="ObjectShortName">start_burst_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/start_burst_read" type="logic">
+      <obj_property name="ElementShortName">start_burst_read</obj_property>
+      <obj_property name="ObjectShortName">start_burst_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/run_cnt" type="array">
+      <obj_property name="ElementShortName">run_cnt[6:0]</obj_property>
+      <obj_property name="ObjectShortName">run_cnt[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/zone_width" type="array">
+      <obj_property name="ElementShortName">zone_width[6:0]</obj_property>
+      <obj_property name="ObjectShortName">zone_width[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/zone_height" type="array">
+      <obj_property name="ElementShortName">zone_height[6:0]</obj_property>
+      <obj_property name="ObjectShortName">zone_height[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/zone_area" type="array">
+      <obj_property name="ElementShortName">zone_area[12:0]</obj_property>
+      <obj_property name="ObjectShortName">zone_area[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/curr_voxel" type="array">
+      <obj_property name="ElementShortName">curr_voxel[31:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_voxel[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/curr_comp" type="array">
+      <obj_property name="ElementShortName">curr_comp[4:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_comp[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/curr_elev" type="array">
+      <obj_property name="ElementShortName">curr_elev[5:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_elev[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/curr_nappe" type="array">
+      <obj_property name="ElementShortName">curr_nappe[9:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_nappe[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/curr_zone_azi" type="array">
+      <obj_property name="ElementShortName">curr_zone_azi[3:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_zone_azi[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/curr_zone_elev" type="array">
+      <obj_property name="ElementShortName">curr_zone_elev[3:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_zone_elev[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/curr_zone" type="array">
+      <obj_property name="ElementShortName">curr_zone[5:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_zone[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/compound_offset" type="array">
+      <obj_property name="ElementShortName">compound_offset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">compound_offset[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/voxel_offset" type="array">
+      <obj_property name="ElementShortName">voxel_offset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_offset[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/elev_offset" type="array">
+      <obj_property name="ElementShortName">elev_offset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">elev_offset[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/nappe_offset" type="array">
+      <obj_property name="ElementShortName">nappe_offset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">nappe_offset[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/zone_azi_offset" type="array">
+      <obj_property name="ElementShortName">zone_azi_offset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">zone_azi_offset[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/zone_elev_offset" type="array">
+      <obj_property name="ElementShortName">zone_elev_offset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">zone_elev_offset[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/C_M_TARGET_SLAVE_BASE_ADDR" type="array">
+      <obj_property name="ElementShortName">C_M_TARGET_SLAVE_BASE_ADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_M_TARGET_SLAVE_BASE_ADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/C_M_AXI_BURST_LEN" type="array">
+      <obj_property name="ElementShortName">C_M_AXI_BURST_LEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_M_AXI_BURST_LEN[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/C_M_AXI_ID_WIDTH" type="array">
+      <obj_property name="ElementShortName">C_M_AXI_ID_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_M_AXI_ID_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/C_M_AXI_ADDR_WIDTH" type="array">
+      <obj_property name="ElementShortName">C_M_AXI_ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_M_AXI_ADDR_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/C_M_AXI_DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">C_M_AXI_DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_M_AXI_DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/C_M_AXI_AWUSER_WIDTH" type="array">
+      <obj_property name="ElementShortName">C_M_AXI_AWUSER_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_M_AXI_AWUSER_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/C_M_AXI_ARUSER_WIDTH" type="array">
+      <obj_property name="ElementShortName">C_M_AXI_ARUSER_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_M_AXI_ARUSER_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/C_M_AXI_WUSER_WIDTH" type="array">
+      <obj_property name="ElementShortName">C_M_AXI_WUSER_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_M_AXI_WUSER_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/C_M_AXI_RUSER_WIDTH" type="array">
+      <obj_property name="ElementShortName">C_M_AXI_RUSER_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_M_AXI_RUSER_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/C_M_AXI_BUSER_WIDTH" type="array">
+      <obj_property name="ElementShortName">C_M_AXI_BUSER_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_M_AXI_BUSER_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/TRANSDUCER_ELEMENTS_X" type="array">
+      <obj_property name="ElementShortName">TRANSDUCER_ELEMENTS_X[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TRANSDUCER_ELEMENTS_X[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/TRANSDUCER_ELEMENTS_Y" type="array">
+      <obj_property name="ElementShortName">TRANSDUCER_ELEMENTS_Y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TRANSDUCER_ELEMENTS_Y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/ELEVATION_LINES" type="array">
+      <obj_property name="ElementShortName">ELEVATION_LINES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ELEVATION_LINES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/AZIMUTH_LINES" type="array">
+      <obj_property name="ElementShortName">AZIMUTH_LINES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AZIMUTH_LINES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/C_TRANSACTIONS_NUM" type="array">
+      <obj_property name="ElementShortName">C_TRANSACTIONS_NUM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_TRANSACTIONS_NUM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/C_MASTER_LENGTH" type="array">
+      <obj_property name="ElementShortName">C_MASTER_LENGTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_MASTER_LENGTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_M00_AXI_inst/C_NO_BURSTS_REQ" type="array">
+      <obj_property name="ElementShortName">C_NO_BURSTS_REQ[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_NO_BURSTS_REQ[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider279">
+      <obj_property name="label">Slave AXI Interface</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/awaddr" type="array">
+      <obj_property name="ElementShortName">awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">awaddr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/awlen" type="array">
+      <obj_property name="ElementShortName">awlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">awlen[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/awsize" type="array">
+      <obj_property name="ElementShortName">awsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">awsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/awburst" type="array">
+      <obj_property name="ElementShortName">awburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">awburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/awvalid" type="logic">
+      <obj_property name="ElementShortName">awvalid</obj_property>
+      <obj_property name="ObjectShortName">awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/awready" type="logic">
+      <obj_property name="ElementShortName">awready</obj_property>
+      <obj_property name="ObjectShortName">awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/araddr" type="array">
+      <obj_property name="ElementShortName">araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">araddr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/arlen" type="array">
+      <obj_property name="ElementShortName">arlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">arlen[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/arsize" type="array">
+      <obj_property name="ElementShortName">arsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">arsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/arburst" type="array">
+      <obj_property name="ElementShortName">arburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">arburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/arvalid" type="logic">
+      <obj_property name="ElementShortName">arvalid</obj_property>
+      <obj_property name="ObjectShortName">arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/arready" type="logic">
+      <obj_property name="ElementShortName">arready</obj_property>
+      <obj_property name="ObjectShortName">arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/wdata" type="array">
+      <obj_property name="ElementShortName">wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/wlast" type="logic">
+      <obj_property name="ElementShortName">wlast</obj_property>
+      <obj_property name="ObjectShortName">wlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/wvalid" type="logic">
+      <obj_property name="ElementShortName">wvalid</obj_property>
+      <obj_property name="ObjectShortName">wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/wready" type="logic">
+      <obj_property name="ElementShortName">wready</obj_property>
+      <obj_property name="ObjectShortName">wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/rdata" type="array">
+      <obj_property name="ElementShortName">rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/rresp" type="array">
+      <obj_property name="ElementShortName">rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/rlast" type="logic">
+      <obj_property name="ElementShortName">rlast</obj_property>
+      <obj_property name="ObjectShortName">rlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/axi_arlen" type="array">
+      <obj_property name="ElementShortName">axi_arlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_arlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/axi_arlen_cntr" type="array">
+      <obj_property name="ElementShortName">axi_arlen_cntr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_arlen_cntr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/rvalid" type="logic">
+      <obj_property name="ElementShortName">rvalid</obj_property>
+      <obj_property name="ObjectShortName">rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/rready" type="logic">
+      <obj_property name="ElementShortName">rready</obj_property>
+      <obj_property name="ObjectShortName">rready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/bresp" type="array">
+      <obj_property name="ElementShortName">bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/bvalid" type="logic">
+      <obj_property name="ElementShortName">bvalid</obj_property>
+      <obj_property name="ObjectShortName">bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/bready" type="logic">
+      <obj_property name="ElementShortName">bready</obj_property>
+      <obj_property name="ObjectShortName">bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/response_data_queue" type="array">
+      <obj_property name="ElementShortName">response_data_queue[31:0]</obj_property>
+      <obj_property name="ObjectShortName">response_data_queue[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/response_present" type="logic">
+      <obj_property name="ElementShortName">response_present</obj_property>
+      <obj_property name="ObjectShortName">response_present</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/response_ttype" type="logic">
+      <obj_property name="ElementShortName">response_ttype</obj_property>
+      <obj_property name="ObjectShortName">response_ttype</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/response_address" type="array">
+      <obj_property name="ElementShortName">response_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">response_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/returned_data" type="array">
+      <obj_property name="ElementShortName">returned_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">returned_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/quit_simulation" type="logic">
+      <obj_property name="ElementShortName">quit_simulation</obj_property>
+      <obj_property name="ObjectShortName">quit_simulation</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/error_count" type="array">
+      <obj_property name="ElementShortName">error_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">error_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/ADDRESS_WIDTH" type="array">
+      <obj_property name="ElementShortName">ADDRESS_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDRESS_WIDTH[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/INPUT_DELAY" type="other">
+      <obj_property name="ElementShortName">INPUT_DELAY</obj_property>
+      <obj_property name="ObjectShortName">INPUT_DELAY</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/CLOCK_PERIOD" type="array">
+      <obj_property name="ElementShortName">CLOCK_PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLOCK_PERIOD[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/WRITE" type="array">
+      <obj_property name="ElementShortName">WRITE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WRITE[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/READ" type="array">
+      <obj_property name="ElementShortName">READ[31:0]</obj_property>
+      <obj_property name="ObjectShortName">READ[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/STATUS_REGISTER" type="array">
+      <obj_property name="ElementShortName">STATUS_REGISTER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">STATUS_REGISTER[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/FIFO_REGISTER" type="array">
+      <obj_property name="ElementShortName">FIFO_REGISTER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FIFO_REGISTER[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/BRAM_REGISTER" type="array">
+      <obj_property name="ElementShortName">BRAM_REGISTER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_REGISTER[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/COMMAND_REGISTER" type="array">
+      <obj_property name="ElementShortName">COMMAND_REGISTER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">COMMAND_REGISTER[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_gen_valid" type="logic">
+      <obj_property name="ElementShortName">delay_gen_valid</obj_property>
+      <obj_property name="ObjectShortName">delay_gen_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_gen_valid_delayed" type="logic">
+      <obj_property name="ElementShortName">delay_gen_valid_delayed</obj_property>
+      <obj_property name="ObjectShortName">delay_gen_valid_delayed</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider278">
+      <obj_property name="label">FIFO interface</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/use_aurora_interface" type="logic">
+      <obj_property name="ElementShortName">use_aurora_interface</obj_property>
+      <obj_property name="ObjectShortName">use_aurora_interface</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/stall_aurora_fifo" type="logic">
+      <obj_property name="ElementShortName">stall_aurora_fifo</obj_property>
+      <obj_property name="ObjectShortName">stall_aurora_fifo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/valid_aurora_fifo" type="logic">
+      <obj_property name="ElementShortName">valid_aurora_fifo</obj_property>
+      <obj_property name="ObjectShortName">valid_aurora_fifo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/data_aurora_fifo" type="array">
+      <obj_property name="ElementShortName">data_aurora_fifo[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_aurora_fifo[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider278">
+      <obj_property name="label">Beamformer top-level wires</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/sample_index" type="array">
+      <obj_property name="ElementShortName">sample_index[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_index[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/transducer_index" type="array">
+      <obj_property name="ElementShortName">transducer_index[5:0]</obj_property>
+      <obj_property name="ObjectShortName">transducer_index[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/transducer_counter" type="array">
+      <obj_property name="ElementShortName">transducer_counter[6:0]</obj_property>
+      <obj_property name="ObjectShortName">transducer_counter[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/transducer_counter_reg" type="array">
+      <obj_property name="ElementShortName">transducer_counter_reg[6:0]</obj_property>
+      <obj_property name="ObjectShortName">transducer_counter_reg[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/transducer_counter_reg_reg" type="array">
+      <obj_property name="ElementShortName">transducer_counter_reg_reg[6:0]</obj_property>
+      <obj_property name="ObjectShortName">transducer_counter_reg_reg[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/apodization_index_1" type="array">
+      <obj_property name="ElementShortName">apodization_index_1[9:0]</obj_property>
+      <obj_property name="ObjectShortName">apodization_index_1[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/apodization_index_2" type="array">
+      <obj_property name="ElementShortName">apodization_index_2[9:0]</obj_property>
+      <obj_property name="ObjectShortName">apodization_index_2[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/sample_1" type="array">
+      <obj_property name="ElementShortName">sample_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_1[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/sample_2" type="array">
+      <obj_property name="ElementShortName">sample_2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_2[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/non_streaming_offset_bases" type="array">
+      <obj_property name="ElementShortName">non_streaming_offset_bases[2:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">non_streaming_offset_bases[2:0][31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/current_offset_limit" type="array">
+      <obj_property name="ElementShortName">current_offset_limit[2:0]</obj_property>
+      <obj_property name="ObjectShortName">current_offset_limit[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/offset" type="array">
+      <obj_property name="ElementShortName">offset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">offset[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/use_streaming_inputs" type="logic">
+      <obj_property name="ElementShortName">use_streaming_inputs</obj_property>
+      <obj_property name="ObjectShortName">use_streaming_inputs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nappe_index" type="array">
+      <obj_property name="ElementShortName">nappe_index[8:0]</obj_property>
+      <obj_property name="ObjectShortName">nappe_index[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/ready_nappes" type="array">
+      <obj_property name="ElementShortName">ready_nappes[8:0]</obj_property>
+      <obj_property name="ObjectShortName">ready_nappes[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/status_reg" type="array">
+      <obj_property name="ElementShortName">status_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">status_reg[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/status2_reg" type="array">
+      <obj_property name="ElementShortName">status2_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">status2_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/status3_reg" type="array">
+      <obj_property name="ElementShortName">status3_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">status3_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/status4_reg" type="array">
+      <obj_property name="ElementShortName">status4_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">status4_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/status5_reg" type="array">
+      <obj_property name="ElementShortName">status5_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">status5_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/azimuth_zones" type="array">
+      <obj_property name="ElementShortName">azimuth_zones[3:0]</obj_property>
+      <obj_property name="ObjectShortName">azimuth_zones[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/elevation_zones" type="array">
+      <obj_property name="ElementShortName">elevation_zones[3:0]</obj_property>
+      <obj_property name="ObjectShortName">elevation_zones[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/zone_width" type="array">
+      <obj_property name="ElementShortName">zone_width[6:0]</obj_property>
+      <obj_property name="ObjectShortName">zone_width[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/zone_height" type="array">
+      <obj_property name="ElementShortName">zone_height[6:0]</obj_property>
+      <obj_property name="ObjectShortName">zone_height[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/axi_awaddr" type="array">
+      <obj_property name="ElementShortName">axi_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/mem_wren" type="logic">
+      <obj_property name="ElementShortName">mem_wren</obj_property>
+      <obj_property name="ObjectShortName">mem_wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/mem_wren_reg" type="logic">
+      <obj_property name="ElementShortName">mem_wren_reg</obj_property>
+      <obj_property name="ObjectShortName">mem_wren_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/mem_wren_reg_reg" type="logic">
+      <obj_property name="ElementShortName">mem_wren_reg_reg</obj_property>
+      <obj_property name="ObjectShortName">mem_wren_reg_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/fifo_input_valid" type="logic">
+      <obj_property name="ElementShortName">fifo_input_valid</obj_property>
+      <obj_property name="ObjectShortName">fifo_input_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/fifo_output_valid" type="logic">
+      <obj_property name="ElementShortName">fifo_output_valid</obj_property>
+      <obj_property name="ObjectShortName">fifo_output_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/fifo_output_ready" type="logic">
+      <obj_property name="ElementShortName">fifo_output_ready</obj_property>
+      <obj_property name="ObjectShortName">fifo_output_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/stall_beamformer" type="logic">
+      <obj_property name="ElementShortName">stall_beamformer</obj_property>
+      <obj_property name="ObjectShortName">stall_beamformer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/process_nappe" type="logic">
+      <obj_property name="ElementShortName">process_nappe</obj_property>
+      <obj_property name="ObjectShortName">process_nappe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/start_nappe" type="logic">
+      <obj_property name="ElementShortName">start_nappe</obj_property>
+      <obj_property name="ObjectShortName">start_nappe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/end_of_nappe" type="logic">
+      <obj_property name="ElementShortName">end_of_nappe</obj_property>
+      <obj_property name="ObjectShortName">end_of_nappe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_gen_valid" type="logic">
+      <obj_property name="ElementShortName">delay_gen_valid</obj_property>
+      <obj_property name="ObjectShortName">delay_gen_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_gen_valid_delayed" type="logic">
+      <obj_property name="ElementShortName">delay_gen_valid_delayed</obj_property>
+      <obj_property name="ObjectShortName">delay_gen_valid_delayed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/status_reg" type="array">
+      <obj_property name="ElementShortName">status_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">status_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/status2_reg" type="array">
+      <obj_property name="ElementShortName">status2_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">status2_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/status3_reg" type="array">
+      <obj_property name="ElementShortName">status3_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">status3_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/LEVELS" type="array">
+      <obj_property name="ElementShortName">LEVELS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LEVELS[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/FIFO_DEPTH" type="array">
+      <obj_property name="ElementShortName">FIFO_DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FIFO_DEPTH[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/BRAM_SAMPLES_PER_NAPPE" type="array">
+      <obj_property name="ElementShortName">BRAM_SAMPLES_PER_NAPPE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_SAMPLES_PER_NAPPE[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/STATUS_REG_ADDRESS" type="array">
+      <obj_property name="ElementShortName">STATUS_REG_ADDRESS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">STATUS_REG_ADDRESS[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/FIFO_REG_ADDRESS" type="array">
+      <obj_property name="ElementShortName">FIFO_REG_ADDRESS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FIFO_REG_ADDRESS[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/BRAM_REG_ADDRESS" type="array">
+      <obj_property name="ElementShortName">BRAM_REG_ADDRESS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_REG_ADDRESS[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/COMMAND_REG_ADDRESS" type="array">
+      <obj_property name="ElementShortName">COMMAND_REG_ADDRESS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">COMMAND_REG_ADDRESS[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider156">
+      <obj_property name="label">Adders</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/adder_data_valid" type="array">
+      <obj_property name="ElementShortName">adder_data_valid[6:0]</obj_property>
+      <obj_property name="ObjectShortName">adder_data_valid[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/adder_input" type="array">
+      <obj_property name="ElementShortName">adder_input[0:63][0:0][0:17]</obj_property>
+      <obj_property name="ObjectShortName">adder_input[0:63][0:0][0:17]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">2</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="Reversed">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/adder_output" type="array">
+      <obj_property name="ElementShortName">adder_output[35:0]</obj_property>
+      <obj_property name="ObjectShortName">adder_output[35:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_adder_level[0].adder_i /inputs" type="array">
+      <obj_property name="ElementShortName">inputs[63:0][17:0]</obj_property>
+      <obj_property name="ObjectShortName">inputs[63:0][17:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_adder_level[0].adder_i /outputs" type="array">
+      <obj_property name="ElementShortName">outputs[31:0][18:0]</obj_property>
+      <obj_property name="ObjectShortName">outputs[31:0][18:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_adder_level[1].adder_i /inputs" type="array">
+      <obj_property name="ElementShortName">inputs[31:0][18:0]</obj_property>
+      <obj_property name="ObjectShortName">inputs[31:0][18:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_adder_level[1].adder_i /outputs" type="array">
+      <obj_property name="ElementShortName">outputs[15:0][19:0]</obj_property>
+      <obj_property name="ObjectShortName">outputs[15:0][19:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_adder_level[2].adder_i /inputs" type="array">
+      <obj_property name="ElementShortName">inputs[15:0][19:0]</obj_property>
+      <obj_property name="ObjectShortName">inputs[15:0][19:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_adder_level[2].adder_i /outputs" type="array">
+      <obj_property name="ElementShortName">outputs[7:0][20:0]</obj_property>
+      <obj_property name="ObjectShortName">outputs[7:0][20:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_adder_level[3].adder_i /inputs" type="array">
+      <obj_property name="ElementShortName">inputs[7:0][20:0]</obj_property>
+      <obj_property name="ObjectShortName">inputs[7:0][20:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_adder_level[3].adder_i /outputs" type="array">
+      <obj_property name="ElementShortName">outputs[3:0][21:0]</obj_property>
+      <obj_property name="ObjectShortName">outputs[3:0][21:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_adder_level[4].adder_i /inputs" type="array">
+      <obj_property name="ElementShortName">inputs[3:0][21:0]</obj_property>
+      <obj_property name="ObjectShortName">inputs[3:0][21:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_adder_level[4].adder_i /outputs" type="array">
+      <obj_property name="ElementShortName">outputs[1:0][22:0]</obj_property>
+      <obj_property name="ObjectShortName">outputs[1:0][22:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_adder_level[5].adder_i /inputs" type="array">
+      <obj_property name="ElementShortName">inputs[1:0][22:0]</obj_property>
+      <obj_property name="ObjectShortName">inputs[1:0][22:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_adder_level[5].adder_i /outputs" type="array">
+      <obj_property name="ElementShortName">outputs[0:0][23:0]</obj_property>
+      <obj_property name="ObjectShortName">outputs[0:0][23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1919">
+      <obj_property name="label">Apodization</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/S_AXI_WVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_WVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/S_AXI_WDATA" type="array">
+      <obj_property name="ElementShortName">S_AXI_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WDATA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/S_AXI_AWADDR" type="array">
+      <obj_property name="ElementShortName">S_AXI_AWADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/sample_1" type="array">
+      <obj_property name="ElementShortName">sample_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_1[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/sample_2" type="array">
+      <obj_property name="ElementShortName">sample_2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_2[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/transducer_counter" type="array">
+      <obj_property name="ElementShortName">transducer_counter[6:0]</obj_property>
+      <obj_property name="ObjectShortName">transducer_counter[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/mem_wren" type="logic">
+      <obj_property name="ElementShortName">mem_wren</obj_property>
+      <obj_property name="ObjectShortName">mem_wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/apod1" type="array">
+      <obj_property name="ElementShortName">apod1[17:0]</obj_property>
+      <obj_property name="ObjectShortName">apod1[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/apod2" type="array">
+      <obj_property name="ElementShortName">apod2[17:0]</obj_property>
+      <obj_property name="ObjectShortName">apod2[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/apod_sample_1_full" type="array">
+      <obj_property name="ElementShortName">apod_sample_1_full[33:0]</obj_property>
+      <obj_property name="ObjectShortName">apod_sample_1_full[33:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/apod_sample_2_full" type="array">
+      <obj_property name="ElementShortName">apod_sample_2_full[33:0]</obj_property>
+      <obj_property name="ObjectShortName">apod_sample_2_full[33:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/apod_sample_1" type="array">
+      <obj_property name="ElementShortName">apod_sample_1[17:0]</obj_property>
+      <obj_property name="ObjectShortName">apod_sample_1[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">2</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/apod_sample_2" type="array">
+      <obj_property name="ElementShortName">apod_sample_2[17:0]</obj_property>
+      <obj_property name="ObjectShortName">apod_sample_2[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">2</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/transducer_counter_reg" type="array">
+      <obj_property name="ElementShortName">transducer_counter_reg[6:0]</obj_property>
+      <obj_property name="ObjectShortName">transducer_counter_reg[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/mem_wren_reg" type="logic">
+      <obj_property name="ElementShortName">mem_wren_reg</obj_property>
+      <obj_property name="ObjectShortName">mem_wren_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/tgc1" type="array">
+      <obj_property name="ElementShortName">tgc1[17:0]</obj_property>
+      <obj_property name="ObjectShortName">tgc1[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">9</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/tgc2" type="array">
+      <obj_property name="ElementShortName">tgc2[17:0]</obj_property>
+      <obj_property name="ObjectShortName">tgc2[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">9</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/tgc_sample_1_full" type="array">
+      <obj_property name="ElementShortName">tgc_sample_1_full[35:0]</obj_property>
+      <obj_property name="ObjectShortName">tgc_sample_1_full[35:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">11</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/tgc_sample_2_full" type="array">
+      <obj_property name="ElementShortName">tgc_sample_2_full[35:0]</obj_property>
+      <obj_property name="ObjectShortName">tgc_sample_2_full[35:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">11</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/tgc_sample_1" type="array">
+      <obj_property name="ElementShortName">tgc_sample_1[17:0]</obj_property>
+      <obj_property name="ObjectShortName">tgc_sample_1[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">2</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/tgc_sample_2" type="array">
+      <obj_property name="ElementShortName">tgc_sample_2[17:0]</obj_property>
+      <obj_property name="ObjectShortName">tgc_sample_2[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">2</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/transducer_counter_reg_reg" type="array">
+      <obj_property name="ElementShortName">transducer_counter_reg_reg[6:0]</obj_property>
+      <obj_property name="ObjectShortName">transducer_counter_reg_reg[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/mem_wren_reg_reg" type="logic">
+      <obj_property name="ElementShortName">mem_wren_reg_reg</obj_property>
+      <obj_property name="ObjectShortName">mem_wren_reg_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/offset" type="array">
+      <obj_property name="ElementShortName">offset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">offset[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/apodization_index_1" type="array">
+      <obj_property name="ElementShortName">apodization_index_1[9:0]</obj_property>
+      <obj_property name="ObjectShortName">apodization_index_1[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/apodization_index_2" type="array">
+      <obj_property name="ElementShortName">apodization_index_2[9:0]</obj_property>
+      <obj_property name="ObjectShortName">apodization_index_2[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/sample_index" type="array">
+      <obj_property name="ElementShortName">sample_index[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_index[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/transducer_index" type="array">
+      <obj_property name="ElementShortName">transducer_index[5:0]</obj_property>
+      <obj_property name="ObjectShortName">transducer_index[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/waddr1" type="array">
+      <obj_property name="ElementShortName">waddr1[9:0]</obj_property>
+      <obj_property name="ObjectShortName">waddr1[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/waddr2" type="array">
+      <obj_property name="ElementShortName">waddr2[9:0]</obj_property>
+      <obj_property name="ObjectShortName">waddr2[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_bus" type="array">
+      <obj_property name="ElementShortName">delay_bus[63:0][13:0]</obj_property>
+      <obj_property name="ObjectShortName">delay_bus[63:0][13:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider263">
+      <obj_property name="label">Sample BRAM 0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /addra" type="array">
+      <obj_property name="ElementShortName">addra[9:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /addrb" type="array">
+      <obj_property name="ElementShortName">addrb[9:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /dina" type="array">
+      <obj_property name="ElementShortName">dina[17:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">2</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /dinb" type="array">
+      <obj_property name="ElementShortName">dinb[17:0]</obj_property>
+      <obj_property name="ObjectShortName">dinb[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /clka" type="logic">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /web" type="logic">
+      <obj_property name="ElementShortName">web</obj_property>
+      <obj_property name="ObjectShortName">web</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /ena" type="logic">
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /enb" type="logic">
+      <obj_property name="ElementShortName">enb</obj_property>
+      <obj_property name="ObjectShortName">enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /rsta" type="logic">
+      <obj_property name="ElementShortName">rsta</obj_property>
+      <obj_property name="ObjectShortName">rsta</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /rstb" type="logic">
+      <obj_property name="ElementShortName">rstb</obj_property>
+      <obj_property name="ObjectShortName">rstb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /regcea" type="logic">
+      <obj_property name="ElementShortName">regcea</obj_property>
+      <obj_property name="ObjectShortName">regcea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /regceb" type="logic">
+      <obj_property name="ElementShortName">regceb</obj_property>
+      <obj_property name="ObjectShortName">regceb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /douta" type="array">
+      <obj_property name="ElementShortName">douta[17:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /doutb" type="array">
+      <obj_property name="ElementShortName">doutb[17:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /BRAM" type="array">
+      <obj_property name="ElementShortName">BRAM[1023:0][17:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM[1023:0][17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">2</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /ram_data_a" type="array">
+      <obj_property name="ElementShortName">ram_data_a[17:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_data_a[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /ram_data_b" type="array">
+      <obj_property name="ElementShortName">ram_data_b[17:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_data_b[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /RAM_WIDTH" type="array">
+      <obj_property name="ElementShortName">RAM_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /RAM_DEPTH" type="array">
+      <obj_property name="ElementShortName">RAM_DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM_DEPTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /RAM_PERFORMANCE" type="array">
+      <obj_property name="ElementShortName">RAM_PERFORMANCE[87:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM_PERFORMANCE[87:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /INIT_FILE" type="array">
+      <obj_property name="ElementShortName">INIT_FILE[287:0]</obj_property>
+      <obj_property name="ObjectShortName">INIT_FILE[287:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1731">
+      <obj_property name="label">BRAM inputs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /dina" type="array">
+      <obj_property name="ElementShortName">dina[17:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[0].gen_ram_block_row[0].sample_bram /wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[1].gen_ram_block_row[0].sample_bram /dina" type="array">
+      <obj_property name="ElementShortName">dina[17:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[1].gen_ram_block_row[0].sample_bram /wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[2].gen_ram_block_row[0].sample_bram /dina" type="array">
+      <obj_property name="ElementShortName">dina[17:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[2].gen_ram_block_row[0].sample_bram /wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[3].gen_ram_block_row[0].sample_bram /dina" type="array">
+      <obj_property name="ElementShortName">dina[17:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[3].gen_ram_block_row[0].sample_bram /wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[4].gen_ram_block_row[0].sample_bram /dina" type="array">
+      <obj_property name="ElementShortName">dina[17:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[4].gen_ram_block_row[0].sample_bram /wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[5].gen_ram_block_row[0].sample_bram /dina" type="array">
+      <obj_property name="ElementShortName">dina[17:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[5].gen_ram_block_row[0].sample_bram /wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[6].gen_ram_block_row[0].sample_bram /dina" type="array">
+      <obj_property name="ElementShortName">dina[17:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[6].gen_ram_block_row[0].sample_bram /wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[7].gen_ram_block_row[0].sample_bram /dina" type="array">
+      <obj_property name="ElementShortName">dina[17:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/\gen_ram_block_column[7].gen_ram_block_row[0].sample_bram /wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider278">
+      <obj_property name="label">Delay Generator</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/phi_cnt_out" type="other">
+      <obj_property name="ElementShortName">phi_cnt_out</obj_property>
+      <obj_property name="ObjectShortName">phi_cnt_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/theta_cnt_out" type="other">
+      <obj_property name="ElementShortName">theta_cnt_out</obj_property>
+      <obj_property name="ObjectShortName">theta_cnt_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/delay_valid" type="logic">
+      <obj_property name="ElementShortName">delay_valid</obj_property>
+      <obj_property name="ObjectShortName">delay_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/end_of_nappe" type="logic">
+      <obj_property name="ElementShortName">end_of_nappe</obj_property>
+      <obj_property name="ObjectShortName">end_of_nappe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/end_of_nappe_bundle" type="array">
+      <obj_property name="ElementShortName">end_of_nappe_bundle[63:0]</obj_property>
+      <obj_property name="ObjectShortName">end_of_nappe_bundle[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/next_nappe" type="other">
+      <obj_property name="ElementShortName">next_nappe</obj_property>
+      <obj_property name="ObjectShortName">next_nappe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/delay" type="array">
+      <obj_property name="ElementShortName">delay[895:0]</obj_property>
+      <obj_property name="ObjectShortName">delay[895:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/x_cnt_in" type="other">
+      <obj_property name="ElementShortName">x_cnt_in</obj_property>
+      <obj_property name="ObjectShortName">x_cnt_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/y_cnt_in" type="other">
+      <obj_property name="ElementShortName">y_cnt_in</obj_property>
+      <obj_property name="ObjectShortName">y_cnt_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/nt_cnt_in" type="other">
+      <obj_property name="ElementShortName">nt_cnt_in</obj_property>
+      <obj_property name="ObjectShortName">nt_cnt_in</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_x_cnt" type="other">
+      <obj_property name="ElementShortName">ref_x_cnt</obj_property>
+      <obj_property name="ObjectShortName">ref_x_cnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_y_cnt" type="other">
+      <obj_property name="ElementShortName">ref_y_cnt</obj_property>
+      <obj_property name="ObjectShortName">ref_y_cnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/sqr_and_sum" type="array">
+      <obj_property name="ElementShortName">sqr_and_sum[35:0]</obj_property>
+      <obj_property name="ObjectShortName">sqr_and_sum[35:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/sqrt_res" type="array">
+      <obj_property name="ElementShortName">sqrt_res[17:0]</obj_property>
+      <obj_property name="ObjectShortName">sqrt_res[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/nt_cnt" type="other">
+      <obj_property name="ElementShortName">nt_cnt</obj_property>
+      <obj_property name="ObjectShortName">nt_cnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/types_pkg/excitation_peak_time" type="array">
+      <obj_property name="ElementShortName">excitation_peak_time[0:17]</obj_property>
+      <obj_property name="ObjectShortName">excitation_peak_time[0:17]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/offset_constants/offset[0]" type="array">
+      <obj_property name="ElementShortName">[0][17:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_res" type="array">
+      <obj_property name="ElementShortName">ref_delay_res[17:0]</obj_property>
+      <obj_property name="ObjectShortName">ref_delay_res[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_1" type="array">
+      <obj_property name="ElementShortName">ref_delay_1[0:0][0:63][17:0]</obj_property>
+      <obj_property name="ObjectShortName">ref_delay_1[0:0][0:63][17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_2" type="array">
+      <obj_property name="ElementShortName">ref_delay_2[0:0][0:63][17:0]</obj_property>
+      <obj_property name="ObjectShortName">ref_delay_2[0:0][0:63][17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/delay_int" type="array">
+      <obj_property name="ElementShortName">delay_int[0:0][0:63][13:0]</obj_property>
+      <obj_property name="ObjectShortName">delay_int[0:0][0:63][13:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">0</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_delay_out" type="array">
+      <obj_property name="ElementShortName">tx_delay_out[17:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_delay_out[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_offset" type="array">
+      <obj_property name="ElementShortName">tx_offset[17:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_offset[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/x0" type="array">
+      <obj_property name="ElementShortName">x0[17:0]</obj_property>
+      <obj_property name="ObjectShortName">x0[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/y0" type="array">
+      <obj_property name="ElementShortName">y0[17:0]</obj_property>
+      <obj_property name="ObjectShortName">y0[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/z0" type="array">
+      <obj_property name="ElementShortName">z0[17:0]</obj_property>
+      <obj_property name="ObjectShortName">z0[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1399">
+      <obj_property name="label">Steer 0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/tx_delay" type="array">
+      <obj_property name="ElementShortName">tx_delay[17:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_delay[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/tx_offset" type="array">
+      <obj_property name="ElementShortName">tx_offset[17:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_offset[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/zone_cnt" type="array">
+      <obj_property name="ElementShortName">zone_cnt[5:0]</obj_property>
+      <obj_property name="ObjectShortName">zone_cnt[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/zone_theta" type="array">
+      <obj_property name="ElementShortName">zone_theta[3:0]</obj_property>
+      <obj_property name="ObjectShortName">zone_theta[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/zone_width" type="array">
+      <obj_property name="ElementShortName">zone_width[6:0]</obj_property>
+      <obj_property name="ObjectShortName">zone_width[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/zone_height" type="array">
+      <obj_property name="ElementShortName">zone_height[6:0]</obj_property>
+      <obj_property name="ObjectShortName">zone_height[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/start_nappe" type="logic">
+      <obj_property name="ElementShortName">start_nappe</obj_property>
+      <obj_property name="ObjectShortName">start_nappe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/end_of_nappe" type="logic">
+      <obj_property name="ElementShortName">end_of_nappe</obj_property>
+      <obj_property name="ObjectShortName">end_of_nappe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/start_steering" type="logic">
+      <obj_property name="ElementShortName">start_steering</obj_property>
+      <obj_property name="ObjectShortName">start_steering</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/ref_delay_2" type="array">
+      <obj_property name="ElementShortName">ref_delay_2[0:63][17:0]</obj_property>
+      <obj_property name="ObjectShortName">ref_delay_2[0:63][17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/delay" type="array">
+      <obj_property name="ElementShortName">delay[0:63][13:0]</obj_property>
+      <obj_property name="ObjectShortName">delay[0:63][13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/delay_valid" type="logic">
+      <obj_property name="ElementShortName">delay_valid</obj_property>
+      <obj_property name="ObjectShortName">delay_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/theta" type="other">
+      <obj_property name="ElementShortName">theta</obj_property>
+      <obj_property name="ObjectShortName">theta</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/phi" type="other">
+      <obj_property name="ElementShortName">phi</obj_property>
+      <obj_property name="ObjectShortName">phi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/rdaddr" type="array">
+      <obj_property name="ElementShortName">rdaddr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">rdaddr[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/dout" type="array">
+      <obj_property name="ElementShortName">dout[17:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/stateS" type="other">
+      <obj_property name="ElementShortName">stateS</obj_property>
+      <obj_property name="ObjectShortName">stateS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/c1_debug" type="array">
+      <obj_property name="ElementShortName">c1_debug[0:63][17:0]</obj_property>
+      <obj_property name="ObjectShortName">c1_debug[0:63][17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/c2_debug" type="array">
+      <obj_property name="ElementShortName">c2_debug[17:0]</obj_property>
+      <obj_property name="ObjectShortName">c2_debug[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/c1_index" type="other">
+      <obj_property name="ElementShortName">c1_index</obj_property>
+      <obj_property name="ObjectShortName">c1_index</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/rx_debug" type="array">
+      <obj_property name="ElementShortName">rx_debug[0:63][17:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_debug[0:63][17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/tx" type="array">
+      <obj_property name="ElementShortName">tx[17:0]</obj_property>
+      <obj_property name="ObjectShortName">tx[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/run_nappe" type="logic">
+      <obj_property name="ElementShortName">run_nappe</obj_property>
+      <obj_property name="ObjectShortName">run_nappe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/TRANSDUCER_ELEMENTS_X" type="other">
+      <obj_property name="ElementShortName">TRANSDUCER_ELEMENTS_X</obj_property>
+      <obj_property name="ObjectShortName">TRANSDUCER_ELEMENTS_X</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/\GEN_DELAY_STEER(0)\/delay_steer0/TRANSDUCER_ELEMENTS_Y" type="other">
+      <obj_property name="ElementShortName">TRANSDUCER_ELEMENTS_Y</obj_property>
+      <obj_property name="ObjectShortName">TRANSDUCER_ELEMENTS_Y</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1399">
+      <obj_property name="label">C1 Constants</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c1_constants/c1" type="array">
+      <obj_property name="ElementShortName">c1[0:63][0:63][17:0]</obj_property>
+      <obj_property name="ObjectShortName">c1[0:63][0:63][17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c1_constants/c1[0][0]" type="array">
+      <obj_property name="ElementShortName">[0][17:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider2557">
+      <obj_property name="label">Ref Delay Gen</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/data_valid" type="logic">
+      <obj_property name="ElementShortName">data_valid</obj_property>
+      <obj_property name="ObjectShortName">data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/reset_delay" type="logic">
+      <obj_property name="ElementShortName">reset_delay</obj_property>
+      <obj_property name="ObjectShortName">reset_delay</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/h" type="array">
+      <obj_property name="ElementShortName">h[17:0]</obj_property>
+      <obj_property name="ObjectShortName">h[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/inp_rdy" type="logic">
+      <obj_property name="ElementShortName">inp_rdy</obj_property>
+      <obj_property name="ObjectShortName">inp_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/stateRout" type="other">
+      <obj_property name="ElementShortName">stateRout</obj_property>
+      <obj_property name="ObjectShortName">stateRout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_out_ready" type="logic">
+      <obj_property name="ElementShortName">tx_out_ready</obj_property>
+      <obj_property name="ObjectShortName">tx_out_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/nt_cnt" type="other">
+      <obj_property name="ElementShortName">nt_cnt</obj_property>
+      <obj_property name="ObjectShortName">nt_cnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/out_rdy" type="logic">
+      <obj_property name="ElementShortName">out_rdy</obj_property>
+      <obj_property name="ObjectShortName">out_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/ref_delay" type="array">
+      <obj_property name="ElementShortName">ref_delay[17:0]</obj_property>
+      <obj_property name="ObjectShortName">ref_delay[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/streaming_not_fixed" type="logic">
+      <obj_property name="ElementShortName">streaming_not_fixed</obj_property>
+      <obj_property name="ObjectShortName">streaming_not_fixed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/sqr_and_sum" type="array">
+      <obj_property name="ElementShortName">sqr_and_sum[35:0]</obj_property>
+      <obj_property name="ObjectShortName">sqr_and_sum[35:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/sqrt_res" type="array">
+      <obj_property name="ElementShortName">sqrt_res[17:0]</obj_property>
+      <obj_property name="ObjectShortName">sqrt_res[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/w" type="array">
+      <obj_property name="ElementShortName">w[17:0]</obj_property>
+      <obj_property name="ObjectShortName">w[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/x_cnt" type="other">
+      <obj_property name="ElementShortName">x_cnt</obj_property>
+      <obj_property name="ObjectShortName">x_cnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/y_cnt" type="other">
+      <obj_property name="ElementShortName">y_cnt</obj_property>
+      <obj_property name="ObjectShortName">y_cnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/ref_delay_calculator1/zero_offset" type="array">
+      <obj_property name="ElementShortName">zero_offset[13:0]</obj_property>
+      <obj_property name="ObjectShortName">zero_offset[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider278">
+      <obj_property name="label">TX Delay Gen</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/start_nappe" type="logic">
+      <obj_property name="ElementShortName">start_nappe</obj_property>
+      <obj_property name="ObjectShortName">start_nappe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/zone_cmd_switch" type="logic">
+      <obj_property name="ElementShortName">zone_cmd_switch</obj_property>
+      <obj_property name="ObjectShortName">zone_cmd_switch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/zone_azi" type="array">
+      <obj_property name="ElementShortName">zone_azi[3:0]</obj_property>
+      <obj_property name="ObjectShortName">zone_azi[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/zone_elev" type="array">
+      <obj_property name="ElementShortName">zone_elev[3:0]</obj_property>
+      <obj_property name="ObjectShortName">zone_elev[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/run_cnt" type="array">
+      <obj_property name="ElementShortName">run_cnt[6:0]</obj_property>
+      <obj_property name="ObjectShortName">run_cnt[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/zone_width" type="array">
+      <obj_property name="ElementShortName">zone_width[6:0]</obj_property>
+      <obj_property name="ObjectShortName">zone_width[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/zone_height" type="array">
+      <obj_property name="ElementShortName">zone_height[6:0]</obj_property>
+      <obj_property name="ObjectShortName">zone_height[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/zone_origin_base_pointer" type="array">
+      <obj_property name="ElementShortName">zone_origin_base_pointer[5:0]</obj_property>
+      <obj_property name="ObjectShortName">zone_origin_base_pointer[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/compound_origin_base_pointer" type="array">
+      <obj_property name="ElementShortName">compound_origin_base_pointer[5:0]</obj_property>
+      <obj_property name="ObjectShortName">compound_origin_base_pointer[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/tx_out" type="array">
+      <obj_property name="ElementShortName">tx_out[17:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_out[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/nappe_counter" type="array">
+      <obj_property name="ElementShortName">nappe_counter[10:0]</obj_property>
+      <obj_property name="ObjectShortName">nappe_counter[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/azimuth_counter" type="array">
+      <obj_property name="ElementShortName">azimuth_counter[6:0]</obj_property>
+      <obj_property name="ObjectShortName">azimuth_counter[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/elevation_counter" type="array">
+      <obj_property name="ElementShortName">elevation_counter[6:0]</obj_property>
+      <obj_property name="ObjectShortName">elevation_counter[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/curr_zone_azi" type="array">
+      <obj_property name="ElementShortName">curr_zone_azi[2:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_zone_azi[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/curr_zone_elev" type="array">
+      <obj_property name="ElementShortName">curr_zone_elev[2:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_zone_elev[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/azimuth_pointer" type="array">
+      <obj_property name="ElementShortName">azimuth_pointer[6:0]</obj_property>
+      <obj_property name="ObjectShortName">azimuth_pointer[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/elevation_pointer" type="array">
+      <obj_property name="ElementShortName">elevation_pointer[6:0]</obj_property>
+      <obj_property name="ObjectShortName">elevation_pointer[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/inc" type="array">
+      <obj_property name="ElementShortName">inc[5:0]</obj_property>
+      <obj_property name="ObjectShortName">inc[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/end_of_zone" type="logic">
+      <obj_property name="ElementShortName">end_of_zone</obj_property>
+      <obj_property name="ObjectShortName">end_of_zone</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/end_of_zone_delay" type="array">
+      <obj_property name="ElementShortName">end_of_zone_delay[1:0]</obj_property>
+      <obj_property name="ObjectShortName">end_of_zone_delay[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/x0" type="array">
+      <obj_property name="ElementShortName">x0[17:0]</obj_property>
+      <obj_property name="ObjectShortName">x0[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/y0" type="array">
+      <obj_property name="ElementShortName">y0[17:0]</obj_property>
+      <obj_property name="ObjectShortName">y0[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/z0" type="array">
+      <obj_property name="ElementShortName">z0[17:0]</obj_property>
+      <obj_property name="ObjectShortName">z0[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/radius_v" type="array">
+      <obj_property name="ElementShortName">radius_v[18:0]</obj_property>
+      <obj_property name="ObjectShortName">radius_v[18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/sin_theta" type="array">
+      <obj_property name="ElementShortName">sin_theta[18:0]</obj_property>
+      <obj_property name="ObjectShortName">sin_theta[18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">17</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/cos_theta" type="array">
+      <obj_property name="ElementShortName">cos_theta[18:0]</obj_property>
+      <obj_property name="ObjectShortName">cos_theta[18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">17</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/cos_theta_delay" type="array">
+      <obj_property name="ElementShortName">cos_theta_delay[18:0]</obj_property>
+      <obj_property name="ObjectShortName">cos_theta_delay[18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">17</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/sin_phi" type="array">
+      <obj_property name="ElementShortName">sin_phi[18:0]</obj_property>
+      <obj_property name="ObjectShortName">sin_phi[18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">17</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/cos_phi" type="array">
+      <obj_property name="ElementShortName">cos_phi[18:0]</obj_property>
+      <obj_property name="ObjectShortName">cos_phi[18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">17</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/xS_delay" type="array">
+      <obj_property name="ElementShortName">xS_delay[37:0]</obj_property>
+      <obj_property name="ObjectShortName">xS_delay[37:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/yS_part" type="array">
+      <obj_property name="ElementShortName">yS_part[37:0]</obj_property>
+      <obj_property name="ObjectShortName">yS_part[37:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/zS_part" type="array">
+      <obj_property name="ElementShortName">zS_part[37:0]</obj_property>
+      <obj_property name="ObjectShortName">zS_part[37:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/xS" type="array">
+      <obj_property name="ElementShortName">xS[17:0]</obj_property>
+      <obj_property name="ObjectShortName">xS[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/yS" type="array">
+      <obj_property name="ElementShortName">yS[17:0]</obj_property>
+      <obj_property name="ObjectShortName">yS[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/zS" type="array">
+      <obj_property name="ElementShortName">zS[17:0]</obj_property>
+      <obj_property name="ObjectShortName">zS[17:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/xS_subtract" type="array">
+      <obj_property name="ElementShortName">xS_subtract[17:0]</obj_property>
+      <obj_property name="ObjectShortName">xS_subtract[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/yS_subtract" type="array">
+      <obj_property name="ElementShortName">yS_subtract[17:0]</obj_property>
+      <obj_property name="ObjectShortName">yS_subtract[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/zS_subtract" type="array">
+      <obj_property name="ElementShortName">zS_subtract[17:0]</obj_property>
+      <obj_property name="ObjectShortName">zS_subtract[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/xyz_valid" type="logic">
+      <obj_property name="ElementShortName">xyz_valid</obj_property>
+      <obj_property name="ObjectShortName">xyz_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/xyz_valid_delay" type="array">
+      <obj_property name="ElementShortName">xyz_valid_delay[1:0]</obj_property>
+      <obj_property name="ObjectShortName">xyz_valid_delay[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/sqr_and_sum" type="array">
+      <obj_property name="ElementShortName">sqr_and_sum[35:0]</obj_property>
+      <obj_property name="ObjectShortName">sqr_and_sum[35:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/run_nappe" type="logic">
+      <obj_property name="ElementShortName">run_nappe</obj_property>
+      <obj_property name="ObjectShortName">run_nappe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/master_enable" type="logic">
+      <obj_property name="ElementShortName">master_enable</obj_property>
+      <obj_property name="ObjectShortName">master_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/start_steering" type="logic">
+      <obj_property name="ElementShortName">start_steering</obj_property>
+      <obj_property name="ObjectShortName">start_steering</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/out_ready" type="logic">
+      <obj_property name="ElementShortName">out_ready</obj_property>
+      <obj_property name="ObjectShortName">out_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/start_sqrt" type="logic">
+      <obj_property name="ElementShortName">start_sqrt</obj_property>
+      <obj_property name="ObjectShortName">start_sqrt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/start_sqrt_delayed" type="logic">
+      <obj_property name="ElementShortName">start_sqrt_delayed</obj_property>
+      <obj_property name="ObjectShortName">start_sqrt_delayed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/sqrt_res" type="array">
+      <obj_property name="ElementShortName">sqrt_res[17:0]</obj_property>
+      <obj_property name="ObjectShortName">sqrt_res[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/init" type="logic">
+      <obj_property name="ElementShortName">init</obj_property>
+      <obj_property name="ObjectShortName">init</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/tx_out_cnt_debug" type="other">
+      <obj_property name="ElementShortName">tx_out_cnt_debug</obj_property>
+      <obj_property name="ObjectShortName">tx_out_cnt_debug</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/stateTx" type="other">
+      <obj_property name="ElementShortName">stateTx</obj_property>
+      <obj_property name="ObjectShortName">stateTx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/phi_cnt_out" type="other">
+      <obj_property name="ElementShortName">phi_cnt_out</obj_property>
+      <obj_property name="ObjectShortName">phi_cnt_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/theta_cnt_out" type="other">
+      <obj_property name="ElementShortName">theta_cnt_out</obj_property>
+      <obj_property name="ObjectShortName">theta_cnt_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/delay_generation/tx_calculator1/TX_LATENCY" type="other">
+      <obj_property name="ElementShortName">TX_LATENCY</obj_property>
+      <obj_property name="ObjectShortName">TX_LATENCY</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider278">
+      <obj_property name="label">Nappe Buffer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/DIN" type="array">
+      <obj_property name="ElementShortName">DIN[35:0]</obj_property>
+      <obj_property name="ObjectShortName">DIN[35:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/DIN_VALID" type="logic">
+      <obj_property name="ElementShortName">DIN_VALID</obj_property>
+      <obj_property name="ObjectShortName">DIN_VALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/DOUT" type="array">
+      <obj_property name="ElementShortName">DOUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DOUT[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">2</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/DOUT_VALID" type="logic">
+      <obj_property name="ElementShortName">DOUT_VALID</obj_property>
+      <obj_property name="ObjectShortName">DOUT_VALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/DOUT_READY" type="logic">
+      <obj_property name="ElementShortName">DOUT_READY</obj_property>
+      <obj_property name="ObjectShortName">DOUT_READY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/stall_beamformer" type="logic">
+      <obj_property name="ElementShortName">stall_beamformer</obj_property>
+      <obj_property name="ObjectShortName">stall_beamformer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/azimuth_zones" type="array">
+      <obj_property name="ElementShortName">azimuth_zones[3:0]</obj_property>
+      <obj_property name="ObjectShortName">azimuth_zones[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/elevation_zones" type="array">
+      <obj_property name="ElementShortName">elevation_zones[3:0]</obj_property>
+      <obj_property name="ObjectShortName">elevation_zones[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/brams_per_nappe" type="array">
+      <obj_property name="ElementShortName">brams_per_nappe[0:0]</obj_property>
+      <obj_property name="ObjectShortName">brams_per_nappe[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/bf_voxels" type="array">
+      <obj_property name="ElementShortName">bf_voxels[4:0][0:0][35:0]</obj_property>
+      <obj_property name="ObjectShortName">bf_voxels[4:0][0:0][35:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/mod_data" type="array">
+      <obj_property name="ElementShortName">mod_data[4:0][35:0]</obj_property>
+      <obj_property name="ObjectShortName">mod_data[4:0][35:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/mod_data_valid" type="logic">
+      <obj_property name="ElementShortName">mod_data_valid</obj_property>
+      <obj_property name="ObjectShortName">mod_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/reshuffled_mod_data" type="array">
+      <obj_property name="ElementShortName">reshuffled_mod_data[179:0]</obj_property>
+      <obj_property name="ObjectShortName">reshuffled_mod_data[179:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/sample_order_pointer" type="array">
+      <obj_property name="ElementShortName">sample_order_pointer[4:0][2:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_order_pointer[4:0][2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod_data" type="array">
+      <obj_property name="ElementShortName">demod_data[35:0]</obj_property>
+      <obj_property name="ObjectShortName">demod_data[35:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">2</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod_data_valid" type="logic">
+      <obj_property name="ElementShortName">demod_data_valid</obj_property>
+      <obj_property name="ObjectShortName">demod_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/output_voxels" type="array">
+      <obj_property name="ElementShortName">output_voxels[2:0][0:0][35:0]</obj_property>
+      <obj_property name="ObjectShortName">output_voxels[2:0][0:0][35:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/fifo_ready_voxels" type="array">
+      <obj_property name="ElementShortName">fifo_ready_voxels[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_ready_voxels[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/max_value" type="array">
+      <obj_property name="ElementShortName">max_value[35:0]</obj_property>
+      <obj_property name="ObjectShortName">max_value[35:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/nappe_index" type="array">
+      <obj_property name="ElementShortName">nappe_index[8:0]</obj_property>
+      <obj_property name="ObjectShortName">nappe_index[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/nappe_index_trimmed" type="array">
+      <obj_property name="ElementShortName">nappe_index_trimmed[2:0]</obj_property>
+      <obj_property name="ObjectShortName">nappe_index_trimmed[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/pre_nappe_pointer" type="array">
+      <obj_property name="ElementShortName">pre_nappe_pointer[2:0]</obj_property>
+      <obj_property name="ObjectShortName">pre_nappe_pointer[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/pre_bram_store_pointer" type="array">
+      <obj_property name="ElementShortName">pre_bram_store_pointer[-1:0]</obj_property>
+      <obj_property name="ObjectShortName">pre_bram_store_pointer[-1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/pre_bram_fetch_pointer" type="array">
+      <obj_property name="ElementShortName">pre_bram_fetch_pointer[-1:0]</obj_property>
+      <obj_property name="ObjectShortName">pre_bram_fetch_pointer[-1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/pre_voxel_store_pointer" type="array">
+      <obj_property name="ElementShortName">pre_voxel_store_pointer[9:0]</obj_property>
+      <obj_property name="ObjectShortName">pre_voxel_store_pointer[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/pre_voxel_fetch_pointer" type="array">
+      <obj_property name="ElementShortName">pre_voxel_fetch_pointer[9:0]</obj_property>
+      <obj_property name="ObjectShortName">pre_voxel_fetch_pointer[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/stall_beamformer" type="logic">
+      <obj_property name="ElementShortName">stall_beamformer</obj_property>
+      <obj_property name="ObjectShortName">stall_beamformer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/post_nappe_store_pointer" type="array">
+      <obj_property name="ElementShortName">post_nappe_store_pointer[1:0]</obj_property>
+      <obj_property name="ObjectShortName">post_nappe_store_pointer[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/post_nappe_fetch_pointer" type="array">
+      <obj_property name="ElementShortName">post_nappe_fetch_pointer[1:0]</obj_property>
+      <obj_property name="ObjectShortName">post_nappe_fetch_pointer[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/post_nappe_fetch_pointer_prev" type="array">
+      <obj_property name="ElementShortName">post_nappe_fetch_pointer_prev[1:0]</obj_property>
+      <obj_property name="ObjectShortName">post_nappe_fetch_pointer_prev[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/post_nappe_fetch_pointer_next" type="array">
+      <obj_property name="ElementShortName">post_nappe_fetch_pointer_next[1:0]</obj_property>
+      <obj_property name="ObjectShortName">post_nappe_fetch_pointer_next[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/post_bram_store_pointer" type="array">
+      <obj_property name="ElementShortName">post_bram_store_pointer[-1:0]</obj_property>
+      <obj_property name="ObjectShortName">post_bram_store_pointer[-1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/post_bram_fetch_pointer" type="array">
+      <obj_property name="ElementShortName">post_bram_fetch_pointer[-1:0]</obj_property>
+      <obj_property name="ObjectShortName">post_bram_fetch_pointer[-1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/post_bram_fetch_pointer_prev" type="array">
+      <obj_property name="ElementShortName">post_bram_fetch_pointer_prev[-1:0]</obj_property>
+      <obj_property name="ObjectShortName">post_bram_fetch_pointer_prev[-1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/post_bram_fetch_pointer_next" type="array">
+      <obj_property name="ElementShortName">post_bram_fetch_pointer_next[-1:0]</obj_property>
+      <obj_property name="ObjectShortName">post_bram_fetch_pointer_next[-1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/post_voxel_store_pointer" type="array">
+      <obj_property name="ElementShortName">post_voxel_store_pointer[9:0]</obj_property>
+      <obj_property name="ObjectShortName">post_voxel_store_pointer[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/post_voxel_fetch_pointer" type="array">
+      <obj_property name="ElementShortName">post_voxel_fetch_pointer[9:0]</obj_property>
+      <obj_property name="ObjectShortName">post_voxel_fetch_pointer[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/post_voxel_fetch_pointer_prev" type="array">
+      <obj_property name="ElementShortName">post_voxel_fetch_pointer_prev[9:0]</obj_property>
+      <obj_property name="ObjectShortName">post_voxel_fetch_pointer_prev[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/post_voxel_fetch_pointer_next" type="array">
+      <obj_property name="ElementShortName">post_voxel_fetch_pointer_next[9:0]</obj_property>
+      <obj_property name="ObjectShortName">post_voxel_fetch_pointer_next[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/post_buffer_empty" type="logic">
+      <obj_property name="ElementShortName">post_buffer_empty</obj_property>
+      <obj_property name="ObjectShortName">post_buffer_empty</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider278">
+      <obj_property name="label">Demodulator</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/RSTN" type="logic">
+      <obj_property name="ElementShortName">RSTN</obj_property>
+      <obj_property name="ObjectShortName">RSTN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/mod_data" type="array">
+      <obj_property name="ElementShortName">mod_data[179:0]</obj_property>
+      <obj_property name="ObjectShortName">mod_data[179:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/mod_data_valid" type="logic">
+      <obj_property name="ElementShortName">mod_data_valid</obj_property>
+      <obj_property name="ObjectShortName">mod_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/data_sample" type="array">
+      <obj_property name="ElementShortName">data_sample[4:0][35:0]</obj_property>
+      <obj_property name="ObjectShortName">data_sample[4:0][35:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/nappe_index" type="array">
+      <obj_property name="ElementShortName">nappe_index[2:0]</obj_property>
+      <obj_property name="ObjectShortName">nappe_index[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/filter_coeff" type="array">
+      <obj_property name="ElementShortName">filter_coeff[4:0][35:0]</obj_property>
+      <obj_property name="ObjectShortName">filter_coeff[4:0][35:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">28</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/multip" type="array">
+      <obj_property name="ElementShortName">multip[4:0][143:0]</obj_property>
+      <obj_property name="ObjectShortName">multip[4:0][143:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">28</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/multip_sampled" type="array">
+      <obj_property name="ElementShortName">multip_sampled[4:0][143:0]</obj_property>
+      <obj_property name="ObjectShortName">multip_sampled[4:0][143:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">28</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/demod_data_full" type="array">
+      <obj_property name="ElementShortName">demod_data_full[148:0]</obj_property>
+      <obj_property name="ObjectShortName">demod_data_full[148:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">28</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/demod_data" type="array">
+      <obj_property name="ElementShortName">demod_data[35:0]</obj_property>
+      <obj_property name="ObjectShortName">demod_data[35:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/demod_data_valid" type="logic">
+      <obj_property name="ElementShortName">demod_data_valid</obj_property>
+      <obj_property name="ObjectShortName">demod_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/voxel_pointer_in" type="array">
+      <obj_property name="ElementShortName">voxel_pointer_in[9:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_pointer_in[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/bram_pointer_in" type="array">
+      <obj_property name="ElementShortName">bram_pointer_in[-1:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_pointer_in[-1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/voxel_pointer_out" type="array">
+      <obj_property name="ElementShortName">voxel_pointer_out[9:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_pointer_out[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/bram_pointer_out" type="array">
+      <obj_property name="ElementShortName">bram_pointer_out[-1:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_pointer_out[-1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/output_voxels" type="array">
+      <obj_property name="ElementShortName">output_voxels[2:0][0:0][35:0]</obj_property>
+      <obj_property name="ObjectShortName">output_voxels[2:0][0:0][35:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/FILTER_DEPTH" type="array">
+      <obj_property name="ElementShortName">FILTER_DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FILTER_DEPTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/nb/demod/DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider278">
+      <obj_property name="label">Abs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/abs/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/abs/RSTN" type="logic">
+      <obj_property name="ElementShortName">RSTN</obj_property>
+      <obj_property name="ObjectShortName">RSTN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/abs/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[35:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[35:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/abs/data_in_valid" type="logic">
+      <obj_property name="ElementShortName">data_in_valid</obj_property>
+      <obj_property name="ObjectShortName">data_in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/abs/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[35:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/BeamformerIP_S00_AXI_inst/abs/data_out_valid" type="logic">
+      <obj_property name="ElementShortName">data_out_valid</obj_property>
+      <obj_property name="ObjectShortName">data_out_valid</obj_property>
+   </wvobject>
+</wave_config>

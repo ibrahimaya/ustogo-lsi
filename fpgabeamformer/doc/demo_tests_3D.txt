@@ -1,0 +1,542 @@
+% In the test below, add "enable_test" as the first line to enable the test.
+
+% In the tests below, leave "steered static" always at the end of each sequence;
+% it will overwrite the previous BF images, and thus it is the one the GUI will
+% use for simulation; it must therefore match the boards mode.
+
+% The "dest_dir" line must be the last of each batch.
+
+% Presently the syntax does not allow any spaces in strings (variable names, directories,
+% phantom names, etc.)
+
+% The "%" character can be used for comments. In reality, the script that reads this
+% configuration file will just ignore lines that don't start with a known variable name.
+
+% IMPORTANT: In "dest_dir", USE FORWARD SLASHES "/" and mandatorily put a forward slash
+% at the end of the path
+
+% —————————————————————————————— 3D —————————————————————————————— 
+
+% =============== 3D Pointgrid scans, 1 zone
+% exact_static. Also regenerates and insonifies
+% enable_test
+force_regenerate_phantom_probe 1
+force_reinsonify 1
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 1
+with_static_apodization 1
+target_phantom pointgrid
+name_string exact_static
+zone_count 1
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+
+% exact_dynamic. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 1
+with_static_apodization 0
+target_phantom pointgrid
+name_string exact_dynamic
+zone_count 1
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+
+% steered_dynamic. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 0
+with_static_apodization 0
+target_phantom pointgrid
+name_string steered_dynamic
+zone_count 1
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+
+% steered_static. No need to regenerate and insonify
+enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 0
+with_static_apodization 1
+target_phantom pointgrid
+name_string steered_static
+zone_count 1
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+% =============== 3D Pointgrid scans, 2x2 zones
+
+% exact_static. No need to regenerate, but need to reinsonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 1
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 0
+generate_rf 1
+beamform_with_exact_delays 1
+with_static_apodization 1
+target_phantom pointgrid
+name_string exact_static
+zone_count 2
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+% exact_dynamic. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 0
+generate_rf 0
+beamform_with_exact_delays 1
+with_static_apodization 0
+target_phantom pointgrid
+name_string exact_dynamic
+zone_count 2
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+% steered_dynamic. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 0
+generate_rf 0
+beamform_with_exact_delays 0
+with_static_apodization 0
+target_phantom pointgrid
+name_string steered_dynamic
+zone_count 2
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+% steered_static. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 0
+generate_rf 0
+beamform_with_exact_delays 0
+with_static_apodization 1
+target_phantom pointgrid
+name_string steered_static
+zone_count 2
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+% =============== 3D Spherewithwire scans, 1 zone
+% exact_static. Also regenerates and insonifies
+% enable_test
+force_regenerate_phantom_probe 1
+force_reinsonify 1
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 1
+with_static_apodization 1
+target_phantom spherewithwire
+name_string exact_static
+zone_count 1
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+
+% exact_dynamic. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 1
+with_static_apodization 0
+target_phantom spherewithwire
+name_string exact_dynamic
+zone_count 1
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+
+% steered_dynamic. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 0
+with_static_apodization 0
+target_phantom spherewithwire
+name_string steered_dynamic
+zone_count 1
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+
+% steered_static. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 0
+with_static_apodization 1
+target_phantom spherewithwire
+name_string steered_static
+zone_count 1
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+% =============== 3D Spherewithwire scans, 2x2 zones
+
+% exact_static. No need to regenerate, but need to reinsonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 1
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 1
+with_static_apodization 1
+target_phantom spherewithwire
+name_string exact_static
+zone_count 2
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+% exact_dynamic. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 1
+with_static_apodization 0
+target_phantom spherewithwire
+name_string exact_dynamic
+zone_count 2
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+% steered_dynamic. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 0
+with_static_apodization 0
+target_phantom spherewithwire
+name_string steered_dynamic
+zone_count 2
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+% steered_static. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 0
+with_static_apodization 1
+target_phantom spherewithwire
+name_string steered_static
+zone_count 2
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+% =============== 3D Kidney scans, 1 zone
+% exact_static. Also regenerates and insonifies
+% enable_test
+force_regenerate_phantom_probe 1
+force_reinsonify 1
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 1
+with_static_apodization 1
+target_phantom field_kidney
+name_string exact_static
+zone_count 1
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+
+% exact_dynamic. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 1
+with_static_apodization 0
+target_phantom field_kidney
+name_string exact_dynamic
+zone_count 1
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+
+% steered_dynamic. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 0
+with_static_apodization 0
+target_phantom field_kidney
+name_string steered_dynamic
+zone_count 1
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+
+% steered_static. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 0
+with_static_apodization 1
+target_phantom field_kidney
+name_string steered_static
+zone_count 1
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+% =============== 3D Fetus scans, 1 zone
+% exact_static. Also regenerates and insonifies
+% enable_test
+force_regenerate_phantom_probe 1
+force_reinsonify 1
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 1
+with_static_apodization 1
+target_phantom field_fetus
+name_string exact_static
+zone_count 1
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+
+% exact_dynamic. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 1
+with_static_apodization 0
+target_phantom field_fetus
+name_string exact_dynamic
+zone_count 1
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+
+% steered_dynamic. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 0
+with_static_apodization 0
+target_phantom field_fetus
+name_string steered_dynamic
+zone_count 1
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/
+
+
+% steered_static. No need to regenerate and insonify
+% enable_test
+force_regenerate_phantom_probe 0
+force_reinsonify 0
+azimuth_lines 64
+elevation_lines 64
+radial_lines 600
+shallow_depth 0
+target_depth 0.1
+target_azimuth 73
+target_elevation 73
+generate_rtl 1
+generate_rf 1
+beamform_with_exact_delays 0
+with_static_apodization 1
+target_phantom field_fetus
+name_string steered_static
+zone_count 1
+compounding_count 1
+dest_dir /Computer/epfl_phd/development/fpgabeamformer/

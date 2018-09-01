@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_dma_pkg" />
+            <top_module name="axi_sg_pkg" />
+            <top_module name="c1_constants" />
+            <top_module name="c2_filenames" />
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lib_pkg" />
+            <top_module name="lmb_bram_if_funcs" />
+            <top_module name="nt_constants" />
+            <top_module name="offset_constants" />
+            <top_module name="tc_types" />
+            <top_module name="testbench" />
+            <top_module name="types_pkg" />
+            <top_module name="x_constants" />
+            <top_module name="y_constants" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="42610929000fs"></ZoomStartTime>
+      <ZoomEndTime time="42907929002fs"></ZoomEndTime>
+      <Cursor1Time time="42660429000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="248" />
+   <wvobject fp_name="/testbench/sys_rst" type="logic">
+      <obj_property name="ElementShortName">sys_rst</obj_property>
+      <obj_property name="ObjectShortName">sys_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/sys_clk_p" type="logic">
+      <obj_property name="ElementShortName">sys_clk_p</obj_property>
+      <obj_property name="ObjectShortName">sys_clk_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/sys_clk_n" type="logic">
+      <obj_property name="ElementShortName">sys_clk_n</obj_property>
+      <obj_property name="ObjectShortName">sys_clk_n</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider85">
+      <obj_property name="label">Reset Gen</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/sys_rstgen/slowest_sync_clk" type="logic">
+      <obj_property name="ElementShortName">slowest_sync_clk</obj_property>
+      <obj_property name="ObjectShortName">slowest_sync_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/sys_rstgen/ext_reset_in" type="logic">
+      <obj_property name="ElementShortName">ext_reset_in</obj_property>
+      <obj_property name="ObjectShortName">ext_reset_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/sys_rstgen/aux_reset_in" type="logic">
+      <obj_property name="ElementShortName">aux_reset_in</obj_property>
+      <obj_property name="ObjectShortName">aux_reset_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/sys_rstgen/mb_debug_sys_rst" type="logic">
+      <obj_property name="ElementShortName">mb_debug_sys_rst</obj_property>
+      <obj_property name="ObjectShortName">mb_debug_sys_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/sys_rstgen/dcm_locked" type="logic">
+      <obj_property name="ElementShortName">dcm_locked</obj_property>
+      <obj_property name="ObjectShortName">dcm_locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/sys_rstgen/mb_reset" type="logic">
+      <obj_property name="ElementShortName">mb_reset</obj_property>
+      <obj_property name="ObjectShortName">mb_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/sys_rstgen/bus_struct_reset" type="array">
+      <obj_property name="ElementShortName">bus_struct_reset[0:0]</obj_property>
+      <obj_property name="ObjectShortName">bus_struct_reset[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/sys_rstgen/peripheral_reset" type="array">
+      <obj_property name="ElementShortName">peripheral_reset[0:0]</obj_property>
+      <obj_property name="ObjectShortName">peripheral_reset[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/sys_rstgen/interconnect_aresetn" type="array">
+      <obj_property name="ElementShortName">interconnect_aresetn[0:0]</obj_property>
+      <obj_property name="ObjectShortName">interconnect_aresetn[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/sys_rstgen/peripheral_aresetn" type="array">
+      <obj_property name="ElementShortName">peripheral_aresetn[0:0]</obj_property>
+      <obj_property name="ObjectShortName">peripheral_aresetn[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider105">
+      <obj_property name="label">Master 0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_ACLK" type="logic">
+      <obj_property name="ElementShortName">M00_ACLK</obj_property>
+      <obj_property name="ObjectShortName">M00_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_ARESETN" type="array">
+      <obj_property name="ElementShortName">M00_ARESETN[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M00_ARESETN[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_araddr" type="array">
+      <obj_property name="ElementShortName">M00_AXI_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_araddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_arready" type="logic">
+      <obj_property name="ElementShortName">M00_AXI_arready</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_arvalid" type="logic">
+      <obj_property name="ElementShortName">M00_AXI_arvalid</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_awaddr" type="array">
+      <obj_property name="ElementShortName">M00_AXI_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_awready" type="logic">
+      <obj_property name="ElementShortName">M00_AXI_awready</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_awvalid" type="logic">
+      <obj_property name="ElementShortName">M00_AXI_awvalid</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_bready" type="logic">
+      <obj_property name="ElementShortName">M00_AXI_bready</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_bresp" type="array">
+      <obj_property name="ElementShortName">M00_AXI_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_bvalid" type="logic">
+      <obj_property name="ElementShortName">M00_AXI_bvalid</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_rdata" type="array">
+      <obj_property name="ElementShortName">M00_AXI_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_rready" type="logic">
+      <obj_property name="ElementShortName">M00_AXI_rready</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_rready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_rresp" type="array">
+      <obj_property name="ElementShortName">M00_AXI_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_rvalid" type="logic">
+      <obj_property name="ElementShortName">M00_AXI_rvalid</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_wdata" type="array">
+      <obj_property name="ElementShortName">M00_AXI_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_wready" type="logic">
+      <obj_property name="ElementShortName">M00_AXI_wready</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_wstrb" type="array">
+      <obj_property name="ElementShortName">M00_AXI_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M00_AXI_wvalid" type="logic">
+      <obj_property name="ElementShortName">M00_AXI_wvalid</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_ACLK" type="logic">
+      <obj_property name="ElementShortName">M01_ACLK</obj_property>
+      <obj_property name="ObjectShortName">M01_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_ARESETN" type="array">
+      <obj_property name="ElementShortName">M01_ARESETN[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_ARESETN[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_araddr" type="array">
+      <obj_property name="ElementShortName">M01_AXI_araddr[17:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_araddr[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_arready" type="logic">
+      <obj_property name="ElementShortName">M01_AXI_arready</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_arvalid" type="logic">
+      <obj_property name="ElementShortName">M01_AXI_arvalid</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_awaddr" type="array">
+      <obj_property name="ElementShortName">M01_AXI_awaddr[17:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_awaddr[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_awready" type="logic">
+      <obj_property name="ElementShortName">M01_AXI_awready</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_awvalid" type="logic">
+      <obj_property name="ElementShortName">M01_AXI_awvalid</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_bready" type="logic">
+      <obj_property name="ElementShortName">M01_AXI_bready</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_bresp" type="array">
+      <obj_property name="ElementShortName">M01_AXI_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_bvalid" type="logic">
+      <obj_property name="ElementShortName">M01_AXI_bvalid</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_rdata" type="array">
+      <obj_property name="ElementShortName">M01_AXI_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_rready" type="logic">
+      <obj_property name="ElementShortName">M01_AXI_rready</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_rready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_rresp" type="array">
+      <obj_property name="ElementShortName">M01_AXI_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_rvalid" type="logic">
+      <obj_property name="ElementShortName">M01_AXI_rvalid</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_wdata" type="array">
+      <obj_property name="ElementShortName">M01_AXI_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_wready" type="logic">
+      <obj_property name="ElementShortName">M01_AXI_wready</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_wstrb" type="array">
+      <obj_property name="ElementShortName">M01_AXI_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M01_AXI_wvalid" type="logic">
+      <obj_property name="ElementShortName">M01_AXI_wvalid</obj_property>
+      <obj_property name="ObjectShortName">M01_AXI_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_ACLK" type="logic">
+      <obj_property name="ElementShortName">M02_ACLK</obj_property>
+      <obj_property name="ObjectShortName">M02_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_ARESETN" type="array">
+      <obj_property name="ElementShortName">M02_ARESETN[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_ARESETN[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_AXI_araddr" type="array">
+      <obj_property name="ElementShortName">M02_AXI_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_AXI_araddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_AXI_arready" type="logic">
+      <obj_property name="ElementShortName">M02_AXI_arready</obj_property>
+      <obj_property name="ObjectShortName">M02_AXI_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_AXI_arvalid" type="logic">
+      <obj_property name="ElementShortName">M02_AXI_arvalid</obj_property>
+      <obj_property name="ObjectShortName">M02_AXI_arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_AXI_awaddr" type="array">
+      <obj_property name="ElementShortName">M02_AXI_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_AXI_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_AXI_awready" type="logic">
+      <obj_property name="ElementShortName">M02_AXI_awready</obj_property>
+      <obj_property name="ObjectShortName">M02_AXI_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_AXI_awvalid" type="logic">
+      <obj_property name="ElementShortName">M02_AXI_awvalid</obj_property>
+      <obj_property name="ObjectShortName">M02_AXI_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_AXI_bready" type="logic">
+      <obj_property name="ElementShortName">M02_AXI_bready</obj_property>
+      <obj_property name="ObjectShortName">M02_AXI_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_AXI_bresp" type="array">
+      <obj_property name="ElementShortName">M02_AXI_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_AXI_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_AXI_bvalid" type="logic">
+      <obj_property name="ElementShortName">M02_AXI_bvalid</obj_property>
+      <obj_property name="ObjectShortName">M02_AXI_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_AXI_rdata" type="array">
+      <obj_property name="ElementShortName">M02_AXI_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_AXI_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_AXI_rready" type="logic">
+      <obj_property name="ElementShortName">M02_AXI_rready</obj_property>
+      <obj_property name="ObjectShortName">M02_AXI_rready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_AXI_rresp" type="array">
+      <obj_property name="ElementShortName">M02_AXI_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_AXI_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_AXI_rvalid" type="logic">
+      <obj_property name="ElementShortName">M02_AXI_rvalid</obj_property>
+      <obj_property name="ObjectShortName">M02_AXI_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_AXI_wdata" type="array">
+      <obj_property name="ElementShortName">M02_AXI_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_AXI_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_AXI_wready" type="logic">
+      <obj_property name="ElementShortName">M02_AXI_wready</obj_property>
+      <obj_property name="ObjectShortName">M02_AXI_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M02_AXI_wvalid" type="logic">
+      <obj_property name="ElementShortName">M02_AXI_wvalid</obj_property>
+      <obj_property name="ObjectShortName">M02_AXI_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_ACLK" type="logic">
+      <obj_property name="ElementShortName">M03_ACLK</obj_property>
+      <obj_property name="ObjectShortName">M03_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_ARESETN" type="array">
+      <obj_property name="ElementShortName">M03_ARESETN[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_ARESETN[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_araddr" type="array">
+      <obj_property name="ElementShortName">M03_AXI_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_araddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_arready" type="logic">
+      <obj_property name="ElementShortName">M03_AXI_arready</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_arvalid" type="logic">
+      <obj_property name="ElementShortName">M03_AXI_arvalid</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_awaddr" type="array">
+      <obj_property name="ElementShortName">M03_AXI_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_awready" type="logic">
+      <obj_property name="ElementShortName">M03_AXI_awready</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_awvalid" type="logic">
+      <obj_property name="ElementShortName">M03_AXI_awvalid</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_bready" type="logic">
+      <obj_property name="ElementShortName">M03_AXI_bready</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_bresp" type="array">
+      <obj_property name="ElementShortName">M03_AXI_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_bvalid" type="logic">
+      <obj_property name="ElementShortName">M03_AXI_bvalid</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_rdata" type="array">
+      <obj_property name="ElementShortName">M03_AXI_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_rready" type="logic">
+      <obj_property name="ElementShortName">M03_AXI_rready</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_rready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_rresp" type="array">
+      <obj_property name="ElementShortName">M03_AXI_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_rvalid" type="logic">
+      <obj_property name="ElementShortName">M03_AXI_rvalid</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_wdata" type="array">
+      <obj_property name="ElementShortName">M03_AXI_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_wready" type="logic">
+      <obj_property name="ElementShortName">M03_AXI_wready</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_wstrb" type="array">
+      <obj_property name="ElementShortName">M03_AXI_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M03_AXI_wvalid" type="logic">
+      <obj_property name="ElementShortName">M03_AXI_wvalid</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_ACLK" type="logic">
+      <obj_property name="ElementShortName">M04_ACLK</obj_property>
+      <obj_property name="ObjectShortName">M04_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_ARESETN" type="array">
+      <obj_property name="ElementShortName">M04_ARESETN[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M04_ARESETN[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_araddr" type="array">
+      <obj_property name="ElementShortName">M04_AXI_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_araddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_arready" type="logic">
+      <obj_property name="ElementShortName">M04_AXI_arready</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_arvalid" type="logic">
+      <obj_property name="ElementShortName">M04_AXI_arvalid</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_awaddr" type="array">
+      <obj_property name="ElementShortName">M04_AXI_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_awready" type="logic">
+      <obj_property name="ElementShortName">M04_AXI_awready</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_awvalid" type="logic">
+      <obj_property name="ElementShortName">M04_AXI_awvalid</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_bready" type="logic">
+      <obj_property name="ElementShortName">M04_AXI_bready</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_bresp" type="array">
+      <obj_property name="ElementShortName">M04_AXI_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_bvalid" type="logic">
+      <obj_property name="ElementShortName">M04_AXI_bvalid</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_rdata" type="array">
+      <obj_property name="ElementShortName">M04_AXI_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_rready" type="logic">
+      <obj_property name="ElementShortName">M04_AXI_rready</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_rready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_rresp" type="array">
+      <obj_property name="ElementShortName">M04_AXI_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_rvalid" type="logic">
+      <obj_property name="ElementShortName">M04_AXI_rvalid</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_wdata" type="array">
+      <obj_property name="ElementShortName">M04_AXI_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_wready" type="logic">
+      <obj_property name="ElementShortName">M04_AXI_wready</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_wstrb" type="array">
+      <obj_property name="ElementShortName">M04_AXI_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M04_AXI_wvalid" type="logic">
+      <obj_property name="ElementShortName">M04_AXI_wvalid</obj_property>
+      <obj_property name="ObjectShortName">M04_AXI_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_ACLK" type="logic">
+      <obj_property name="ElementShortName">M05_ACLK</obj_property>
+      <obj_property name="ObjectShortName">M05_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_ARESETN" type="array">
+      <obj_property name="ElementShortName">M05_ARESETN[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_ARESETN[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_araddr" type="array">
+      <obj_property name="ElementShortName">M05_AXI_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_araddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_arburst" type="array">
+      <obj_property name="ElementShortName">M05_AXI_arburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_arburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_arcache" type="array">
+      <obj_property name="ElementShortName">M05_AXI_arcache[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_arcache[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_arlen" type="array">
+      <obj_property name="ElementShortName">M05_AXI_arlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_arlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_arlock" type="logic">
+      <obj_property name="ElementShortName">M05_AXI_arlock</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_arlock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_arprot" type="array">
+      <obj_property name="ElementShortName">M05_AXI_arprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_arprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_arqos" type="array">
+      <obj_property name="ElementShortName">M05_AXI_arqos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_arqos[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_arready" type="logic">
+      <obj_property name="ElementShortName">M05_AXI_arready</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_arregion" type="array">
+      <obj_property name="ElementShortName">M05_AXI_arregion[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_arregion[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_arsize" type="array">
+      <obj_property name="ElementShortName">M05_AXI_arsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_arsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_arvalid" type="logic">
+      <obj_property name="ElementShortName">M05_AXI_arvalid</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_awaddr" type="array">
+      <obj_property name="ElementShortName">M05_AXI_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_awburst" type="array">
+      <obj_property name="ElementShortName">M05_AXI_awburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_awburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_awcache" type="array">
+      <obj_property name="ElementShortName">M05_AXI_awcache[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_awcache[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_awlen" type="array">
+      <obj_property name="ElementShortName">M05_AXI_awlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_awlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_awlock" type="logic">
+      <obj_property name="ElementShortName">M05_AXI_awlock</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_awlock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_awprot" type="array">
+      <obj_property name="ElementShortName">M05_AXI_awprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_awprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_awqos" type="array">
+      <obj_property name="ElementShortName">M05_AXI_awqos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_awqos[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_awready" type="logic">
+      <obj_property name="ElementShortName">M05_AXI_awready</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_awregion" type="array">
+      <obj_property name="ElementShortName">M05_AXI_awregion[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_awregion[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_awsize" type="array">
+      <obj_property name="ElementShortName">M05_AXI_awsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_awsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_awvalid" type="logic">
+      <obj_property name="ElementShortName">M05_AXI_awvalid</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_bready" type="logic">
+      <obj_property name="ElementShortName">M05_AXI_bready</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_bresp" type="array">
+      <obj_property name="ElementShortName">M05_AXI_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_bvalid" type="logic">
+      <obj_property name="ElementShortName">M05_AXI_bvalid</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_rdata" type="array">
+      <obj_property name="ElementShortName">M05_AXI_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_rlast" type="logic">
+      <obj_property name="ElementShortName">M05_AXI_rlast</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_rlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_rready" type="logic">
+      <obj_property name="ElementShortName">M05_AXI_rready</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_rready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_rresp" type="array">
+      <obj_property name="ElementShortName">M05_AXI_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_rvalid" type="logic">
+      <obj_property name="ElementShortName">M05_AXI_rvalid</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_wdata" type="array">
+      <obj_property name="ElementShortName">M05_AXI_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_wlast" type="logic">
+      <obj_property name="ElementShortName">M05_AXI_wlast</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_wlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_wready" type="logic">
+      <obj_property name="ElementShortName">M05_AXI_wready</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_wstrb" type="array">
+      <obj_property name="ElementShortName">M05_AXI_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M05_AXI_wvalid" type="logic">
+      <obj_property name="ElementShortName">M05_AXI_wvalid</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_ACLK" type="logic">
+      <obj_property name="ElementShortName">M06_ACLK</obj_property>
+      <obj_property name="ObjectShortName">M06_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_ARESETN" type="array">
+      <obj_property name="ElementShortName">M06_ARESETN[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M06_ARESETN[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_araddr" type="array">
+      <obj_property name="ElementShortName">M06_AXI_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_araddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_arready" type="logic">
+      <obj_property name="ElementShortName">M06_AXI_arready</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_arvalid" type="logic">
+      <obj_property name="ElementShortName">M06_AXI_arvalid</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_awaddr" type="array">
+      <obj_property name="ElementShortName">M06_AXI_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_awready" type="logic">
+      <obj_property name="ElementShortName">M06_AXI_awready</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_awvalid" type="logic">
+      <obj_property name="ElementShortName">M06_AXI_awvalid</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_bready" type="logic">
+      <obj_property name="ElementShortName">M06_AXI_bready</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_bresp" type="array">
+      <obj_property name="ElementShortName">M06_AXI_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_bvalid" type="logic">
+      <obj_property name="ElementShortName">M06_AXI_bvalid</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_rdata" type="array">
+      <obj_property name="ElementShortName">M06_AXI_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_rready" type="logic">
+      <obj_property name="ElementShortName">M06_AXI_rready</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_rready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_rresp" type="array">
+      <obj_property name="ElementShortName">M06_AXI_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_rvalid" type="logic">
+      <obj_property name="ElementShortName">M06_AXI_rvalid</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_wdata" type="array">
+      <obj_property name="ElementShortName">M06_AXI_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_wready" type="logic">
+      <obj_property name="ElementShortName">M06_AXI_wready</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_wstrb" type="array">
+      <obj_property name="ElementShortName">M06_AXI_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M06_AXI_wvalid" type="logic">
+      <obj_property name="ElementShortName">M06_AXI_wvalid</obj_property>
+      <obj_property name="ObjectShortName">M06_AXI_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_ACLK" type="logic">
+      <obj_property name="ElementShortName">M07_ACLK</obj_property>
+      <obj_property name="ObjectShortName">M07_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_ARESETN" type="array">
+      <obj_property name="ElementShortName">M07_ARESETN[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_ARESETN[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_araddr" type="array">
+      <obj_property name="ElementShortName">M07_AXI_araddr[30:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_araddr[30:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_arburst" type="array">
+      <obj_property name="ElementShortName">M07_AXI_arburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_arburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_arcache" type="array">
+      <obj_property name="ElementShortName">M07_AXI_arcache[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_arcache[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_arlen" type="array">
+      <obj_property name="ElementShortName">M07_AXI_arlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_arlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_arlock" type="array">
+      <obj_property name="ElementShortName">M07_AXI_arlock[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_arlock[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_arprot" type="array">
+      <obj_property name="ElementShortName">M07_AXI_arprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_arprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_arqos" type="array">
+      <obj_property name="ElementShortName">M07_AXI_arqos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_arqos[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_arready" type="logic">
+      <obj_property name="ElementShortName">M07_AXI_arready</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_arsize" type="array">
+      <obj_property name="ElementShortName">M07_AXI_arsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_arsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_arvalid" type="logic">
+      <obj_property name="ElementShortName">M07_AXI_arvalid</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_awaddr" type="array">
+      <obj_property name="ElementShortName">M07_AXI_awaddr[30:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_awaddr[30:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_awburst" type="array">
+      <obj_property name="ElementShortName">M07_AXI_awburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_awburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_awcache" type="array">
+      <obj_property name="ElementShortName">M07_AXI_awcache[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_awcache[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_awlen" type="array">
+      <obj_property name="ElementShortName">M07_AXI_awlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_awlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_awlock" type="array">
+      <obj_property name="ElementShortName">M07_AXI_awlock[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_awlock[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_awprot" type="array">
+      <obj_property name="ElementShortName">M07_AXI_awprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_awprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_awqos" type="array">
+      <obj_property name="ElementShortName">M07_AXI_awqos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_awqos[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_awready" type="logic">
+      <obj_property name="ElementShortName">M07_AXI_awready</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_awsize" type="array">
+      <obj_property name="ElementShortName">M07_AXI_awsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_awsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_awvalid" type="logic">
+      <obj_property name="ElementShortName">M07_AXI_awvalid</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_bready" type="logic">
+      <obj_property name="ElementShortName">M07_AXI_bready</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_bresp" type="array">
+      <obj_property name="ElementShortName">M07_AXI_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_bvalid" type="logic">
+      <obj_property name="ElementShortName">M07_AXI_bvalid</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_rdata" type="array">
+      <obj_property name="ElementShortName">M07_AXI_rdata[511:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_rdata[511:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_rlast" type="logic">
+      <obj_property name="ElementShortName">M07_AXI_rlast</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_rlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_rready" type="logic">
+      <obj_property name="ElementShortName">M07_AXI_rready</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_rready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_rresp" type="array">
+      <obj_property name="ElementShortName">M07_AXI_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_rvalid" type="logic">
+      <obj_property name="ElementShortName">M07_AXI_rvalid</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_wdata" type="array">
+      <obj_property name="ElementShortName">M07_AXI_wdata[511:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_wdata[511:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_wlast" type="logic">
+      <obj_property name="ElementShortName">M07_AXI_wlast</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_wlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_wready" type="logic">
+      <obj_property name="ElementShortName">M07_AXI_wready</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_wstrb" type="array">
+      <obj_property name="ElementShortName">M07_AXI_wstrb[63:0]</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_wstrb[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/axi_cpu_interconnect/M07_AXI_wvalid" type="logic">
+      <obj_property name="ElementShortName">M07_AXI_wvalid</obj_property>
+      <obj_property name="ObjectShortName">M07_AXI_wvalid</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider74">
+      <obj_property name="label">Beamformer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_aclk" type="logic">
+      <obj_property name="ElementShortName">s00_axi_aclk</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_aresetn" type="logic">
+      <obj_property name="ElementShortName">s00_axi_aresetn</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_awid" type="array">
+      <obj_property name="ElementShortName">s00_axi_awid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awid[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_awaddr" type="array">
+      <obj_property name="ElementShortName">s00_axi_awaddr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awaddr[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_awlen" type="array">
+      <obj_property name="ElementShortName">s00_axi_awlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_awsize" type="array">
+      <obj_property name="ElementShortName">s00_axi_awsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_awburst" type="array">
+      <obj_property name="ElementShortName">s00_axi_awburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_awlock" type="logic">
+      <obj_property name="ElementShortName">s00_axi_awlock</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awlock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_awcache" type="array">
+      <obj_property name="ElementShortName">s00_axi_awcache[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awcache[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_awprot" type="array">
+      <obj_property name="ElementShortName">s00_axi_awprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_awqos" type="array">
+      <obj_property name="ElementShortName">s00_axi_awqos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awqos[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_awregion" type="array">
+      <obj_property name="ElementShortName">s00_axi_awregion[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awregion[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_awvalid" type="logic">
+      <obj_property name="ElementShortName">s00_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_awready" type="logic">
+      <obj_property name="ElementShortName">s00_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_wdata" type="array">
+      <obj_property name="ElementShortName">s00_axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_wstrb" type="array">
+      <obj_property name="ElementShortName">s00_axi_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_wlast" type="logic">
+      <obj_property name="ElementShortName">s00_axi_wlast</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_wvalid" type="logic">
+      <obj_property name="ElementShortName">s00_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_wready" type="logic">
+      <obj_property name="ElementShortName">s00_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_bid" type="array">
+      <obj_property name="ElementShortName">s00_axi_bid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_bid[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_bresp" type="array">
+      <obj_property name="ElementShortName">s00_axi_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_bvalid" type="logic">
+      <obj_property name="ElementShortName">s00_axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_bready" type="logic">
+      <obj_property name="ElementShortName">s00_axi_bready</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_arid" type="array">
+      <obj_property name="ElementShortName">s00_axi_arid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arid[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_araddr" type="array">
+      <obj_property name="ElementShortName">s00_axi_araddr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_araddr[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_arlen" type="array">
+      <obj_property name="ElementShortName">s00_axi_arlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_arsize" type="array">
+      <obj_property name="ElementShortName">s00_axi_arsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_arburst" type="array">
+      <obj_property name="ElementShortName">s00_axi_arburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_arlock" type="logic">
+      <obj_property name="ElementShortName">s00_axi_arlock</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arlock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_arcache" type="array">
+      <obj_property name="ElementShortName">s00_axi_arcache[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arcache[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_arprot" type="array">
+      <obj_property name="ElementShortName">s00_axi_arprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_arqos" type="array">
+      <obj_property name="ElementShortName">s00_axi_arqos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arqos[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_arregion" type="array">
+      <obj_property name="ElementShortName">s00_axi_arregion[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arregion[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_arvalid" type="logic">
+      <obj_property name="ElementShortName">s00_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_arready" type="logic">
+      <obj_property name="ElementShortName">s00_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_rid" type="array">
+      <obj_property name="ElementShortName">s00_axi_rid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_rid[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_rdata" type="array">
+      <obj_property name="ElementShortName">s00_axi_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_rresp" type="array">
+      <obj_property name="ElementShortName">s00_axi_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_rlast" type="logic">
+      <obj_property name="ElementShortName">s00_axi_rlast</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_rlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_rvalid" type="logic">
+      <obj_property name="ElementShortName">s00_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/s00_axi_rready" type="logic">
+      <obj_property name="ElementShortName">s00_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_rready</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider274">
+      <obj_property name="label">Beamformer key signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/inst/BeamformerIP_S00_AXI_inst/delay_gen_valid" type="logic">
+      <obj_property name="ElementShortName">delay_gen_valid</obj_property>
+      <obj_property name="ObjectShortName">delay_gen_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/inst/BeamformerIP_S00_AXI_inst/enable_delay_generation" type="logic">
+      <obj_property name="ElementShortName">enable_delay_generation</obj_property>
+      <obj_property name="ObjectShortName">enable_delay_generation</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/inst/BeamformerIP_S00_AXI_inst/process_nappe" type="logic">
+      <obj_property name="ElementShortName">process_nappe</obj_property>
+      <obj_property name="ObjectShortName">process_nappe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/inst/BeamformerIP_S00_AXI_inst/end_of_nappe" type="logic">
+      <obj_property name="ElementShortName">end_of_nappe</obj_property>
+      <obj_property name="ObjectShortName">end_of_nappe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/system/i_system_wrapper/system_i_bak_i/BeamformerIP_0/inst/BeamformerIP_S00_AXI_inst/status_reg" type="array">
+      <obj_property name="ElementShortName">status_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">status_reg[31:0]</obj_property>
+   </wvobject>
+</wave_config>

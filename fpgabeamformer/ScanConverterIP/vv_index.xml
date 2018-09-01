@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Index Version="1" Minor="0">
+	<Repository value="c:/fpgabeamformer/ScanConverterIP">
+	</Repository>
+	<IP>
+		<VLNV value="lsi.epfl.ch:user:ScanConverterIP:1.211">
+		</VLNV>
+		<DisplayName value="ScanConverterIP">
+		</DisplayName>
+		<Description value="ScanConverterIP">
+		</Description>
+		<CoreRevision value="1">
+		</CoreRevision>
+		<ComponentPath value="component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="kintexu">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="/UserIP">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+		<Interfaces>
+			<Interface value="AXI4">
+			</Interface>
+		</Interfaces>
+	</IP>
+</Index>
+

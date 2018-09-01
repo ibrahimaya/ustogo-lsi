@@ -1,0 +1,4 @@
+THIRPARTY=false
+HW_PROJECT_REFERENCE=system_top_hw_platform_1
+PROCESSOR=sys_mb
+MSS_FILE=system.mss

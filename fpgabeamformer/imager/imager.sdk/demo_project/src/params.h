@@ -1,0 +1,37 @@
+/*
+ * params.h
+ *
+ *  Created on: Mar 9, 2017
+ *      Author: Federico
+ */
+
+#ifndef SRC_PARAMS_H_
+#define SRC_PARAMS_H_
+
+#define AZIMUTH_LINES           64
+#define ELEVATION_LINES         1
+#define RADIAL_LINES            500
+#define BEAMFORMER_BASE_ADDRESS 0x44A00000
+#define BEAMFORMER_STATUS_REG   (BEAMFORMER_BASE_ADDRESS + 0x0)
+#define BEAMFORMER_FIFO_REG     (BEAMFORMER_BASE_ADDRESS + 0x4)
+#define BEAMFORMER_BRAM_REG     (BEAMFORMER_BASE_ADDRESS + 0x8)
+#define BEAMFORMER_COMMAND_REG  (BEAMFORMER_BASE_ADDRESS + 0xC)
+#define BEAMFORMER_OPTIONS_REG  (BEAMFORMER_BASE_ADDRESS + 0x10)
+#define BEAMFORMER_RF_DEPTH_REG (BEAMFORMER_BASE_ADDRESS + 0x14)
+#define BEAMFORMER_ZERO_OFF_REG (BEAMFORMER_BASE_ADDRESS + 0x18)
+#define BEAMFORMER_STATUS2_REG  (BEAMFORMER_BASE_ADDRESS + 0x1C)
+#define BEAMFORMER_STATUS3_REG  (BEAMFORMER_BASE_ADDRESS + 0x20)
+#define BEAMFORMER_STATUS4_REG  (BEAMFORMER_BASE_ADDRESS + 0x24)
+#define BEAMFORMER_STATUS5_REG  (BEAMFORMER_BASE_ADDRESS + 0x28)
+#define NAPPE_MEMORY			0xC0000000
+#define NAPPE_WIDTH				(AZIMUTH_LINES * ELEVATION_LINES * RADIAL_LINES)
+#define RF_DEPTH                (2623)
+#define ZERO_OFF                (20)
+// Total: max sample = 2643
+//#define RF_DEPTH                (2743)
+//#define ZERO_OFF                (0)
+//#define ZERO_OFF                (4294967196)
+//#define ZERO_OFF                (-100)
+// Total: max sample = 2643
+
+#endif /* SRC_PARAMS_H_ */

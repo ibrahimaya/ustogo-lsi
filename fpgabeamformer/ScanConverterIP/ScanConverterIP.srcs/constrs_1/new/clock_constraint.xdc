@@ -1,0 +1,56 @@
+#create_clock -period 7.518 -name clk_slave -waveform {0.000 3.759} [get_ports s00_axi_aclk]
+#create_clock -period 10 -name clk_slave -waveform {0.000 5} [get_ports s00_axi_aclk]
+create_clock -period 10 [get_ports s00_axi_aclk]
+create_clock -period 10 [get_ports m00_axi_aclk]
+
+# Input delays: how late the inputs arrive, with respect to the clock edge
+# Same constraint on -min and -max (for hold, setup analysis)
+set_input_delay -clock s00_axi_aclk 0.5 [get_ports s00_axi_araddr]
+set_input_delay -clock s00_axi_aclk 1.0 [get_ports s00_axi_arburst]
+set_input_delay -clock s00_axi_aclk 2.0 [get_ports s00_axi_aresetn]
+set_input_delay -clock s00_axi_aclk 1.0 [get_ports s00_axi_arlen]
+set_input_delay -clock s00_axi_aclk 1.0 [get_ports s00_axi_arvalid]
+set_input_delay -clock s00_axi_aclk 1.0 [get_ports s00_axi_awaddr]
+set_input_delay -clock s00_axi_aclk 1.0 [get_ports s00_axi_awburst]
+set_input_delay -clock s00_axi_aclk 1.0 [get_ports s00_axi_awlen]
+set_input_delay -clock s00_axi_aclk 1.0 [get_ports s00_axi_awvalid]
+set_input_delay -clock s00_axi_aclk 1.0 [get_ports s00_axi_bready]
+set_input_delay -clock s00_axi_aclk 1.0 [get_ports s00_axi_rready]
+set_input_delay -clock s00_axi_aclk 1.0 [get_ports s00_axi_wvalid]
+set_input_delay -clock s00_axi_aclk 1.0 [get_ports s00_axi_wdata]
+set_input_delay -clock s00_axi_aclk 1.0 [get_ports s00_axi_wlast]
+
+
+# Output delays: how early the outputs must be generated, with respect to the clock edge
+# Same constraint on -min and -max (for hold, setup analysis)
+set_output_delay -clock s00_axi_aclk 2.0 [get_ports s00_axi_arready]
+set_output_delay -clock s00_axi_aclk 2.0 [get_ports s00_axi_awready]
+set_output_delay -clock s00_axi_aclk 2.0 [get_ports s00_axi_wready]
+set_output_delay -clock s00_axi_aclk 2.0 [get_ports s00_axi_rdata]
+set_output_delay -clock s00_axi_aclk 2.0 [get_ports s00_axi_rlast]
+set_output_delay -clock s00_axi_aclk 2.0 [get_ports s00_axi_rvalid]
+set_output_delay -clock s00_axi_aclk 2.0 [get_ports s00_axi_rresp]
+set_output_delay -clock s00_axi_aclk 2.0 [get_ports s00_axi_bvalid]
+set_output_delay -clock s00_axi_aclk 2.0 [get_ports s00_axi_bresp]
+
+
+set_input_delay -clock m00_axi_aclk 2.0 [get_ports m00_axi_aresetn]
+set_input_delay -clock m00_axi_aclk 1.0 [get_ports m00_axi_awready]
+set_input_delay -clock m00_axi_aclk 1.0 [get_ports m00_axi_wready]
+set_input_delay -clock m00_axi_aclk 1.0 [get_ports m00_axi_bvalid]
+set_input_delay -clock m00_axi_aclk 1.0 [get_ports m00_axi_arready]
+set_input_delay -clock m00_axi_aclk 1.0 [get_ports m00_axi_rdata]
+set_input_delay -clock m00_axi_aclk 1.0 [get_ports m00_axi_rresp]
+set_input_delay -clock m00_axi_aclk 1.0 [get_ports m00_axi_rvalid]
+
+set_output_delay -clock m00_axi_aclk 2.0 [get_ports m00_axi_awaddr]
+set_output_delay -clock m00_axi_aclk 2.0 [get_ports m00_axi_awprot]
+set_output_delay -clock m00_axi_aclk 2.0 [get_ports m00_axi_awvalid]
+set_output_delay -clock m00_axi_aclk 2.0 [get_ports m00_axi_wdata]
+set_output_delay -clock m00_axi_aclk 2.0 [get_ports m00_axi_wstrb]
+set_output_delay -clock m00_axi_aclk 2.0 [get_ports m00_axi_wvalid]
+set_output_delay -clock m00_axi_aclk 2.0 [get_ports m00_axi_bready]
+set_output_delay -clock m00_axi_aclk 2.0 [get_ports m00_axi_araddr]
+set_output_delay -clock m00_axi_aclk 2.0 [get_ports m00_axi_arprot]
+set_output_delay -clock m00_axi_aclk 2.0 [get_ports m00_axi_arvalid]
+set_output_delay -clock m00_axi_aclk 2.0 [get_ports m00_axi_rready]

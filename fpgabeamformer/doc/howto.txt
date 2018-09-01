@@ -1,0 +1,532 @@
+What we have in there
+=====================
+1) A processing system with a Microblaze, Ethernet, memory, interconnect.
+2) A beamforming block capable of handling 32x32 elements and generating 64x64x600 volumes. This includes: static apodization done on the input samples; memories to hold the input samples (we use one BRAM per two elements, so we have space for 512 samples for each; that's much thicker than needed for a blanket (~35 with the current insonification pattern)); delay calculation; adder tree; output nappe buffer comprising the demodulation logic (abs + lowpass).
+3) A scan conversion and log compression block working on the beamformed voxels.
+4) Output of the images on HDMI.
+5) Flash controller for making the board self-booting.
+6) Testbench infrastructure to generate inputs via Matlab, and to compare outputs against Matlab.
+7) A C# GUI running on a laptop and capable of interfacing with the board to set imaging modes and parameters.
+
+Some results
+============
+In the platform design, the BF block is attached to a 133 MHz clock coming out of the DDR4 PHY. It can probably be pushed to work even faster, later; clock performance hasn't been a focus yet. At this clock, the block is in theory able to produce a voxel per cycle, and considering that our output volume comprises about 2.5 million voxels (64x64x600), this is in theory >50 fps. (In practice we will be limited very much by the Ethernet interface and protocol, as we won't be able to bring in input samples fast enough; the theoretical limit because of this is 14 fps, and much less in practice). The chip utilization post-implementation is:
+
+LUT			120123/242400			49.6% (of which ~73500 for the beamformer and the rest in other platform logic)
+LUTRAM	3917/112800				 3.5%
+FF			116978/484800			24.1% (of which ~76000 for the beamformer and the rest in other platform logic)
+BRAM		426/600						71.0% (of which 512 18-bit for the input samples and 128 36-bit for the delay calculation -> 384, plus other small items)
+DSP			42/1920						 2.2% (almost all for demodulation; apodization is implemented in logic apparently, since the coefficients are constant)
+IO			130/520						25.0%
+BUFG		13/560						 2.3%
+MMCM		2/10							20.0%
+PLL			3/20							15.0%
+
+How it works
+============
+The design is split in three Vivado projects, called "BeamformerIP", "ScanConverterIP" and "imager".
+
+The former project includes the beamformer itself, and a functional testbench. The BeamformerIP is wrapped up as an AXI master/slave peripheral.
+
+The second is similar, in that it includes a Scan Converter packaged as an AXI master/slave peripheral.
+
+The last project is a block design including a Microblaze system, Ethernet controller, HDMI controller, Flash memory controller, and other needed peripherals. It instantiates the BeamformerIP and ScanConverterIP AXI slaves, connected to the existing AXI interconnect.
+
+Required tools, Documentation, Pre-requisites
+=============================================
+
+Matlab (any version should be OK); Vivado 2016.1 (not earlier, and not later); Microsoft Visual Studio Community Edition 2015 or 2017 (free).
+
+To allow Visual Studio to run Matlab as a component:
+[launch a cmd prompt as Administrator]
+	cd "C:\Program Files\MATLAB\R2015b\bin\win64"
+	matlab /regserver
+Then in Visual Studio:
+	Project menu -> Add Reference -> COM -> MATLAB application
+	Project menu -> Add Reference -> Assemblies -> Framework -> Microsoft.CSharp
+	(in Visual Studio 2017: Solution Explorer -> VirtualScope -> References)
+
+The design contains an Ethernet core. By default, Xilinx does not provide a license to instantiate it into the bitstream and therefore put it on the board. Even if a license is present, the core will be in "Evaluation mode" which only allows a few hours of uninterrupted board operation - after which the board will need rebooting/reflashing. Plus, the license is usually only lasting three months. In any case, you will need a license to program the board.
+Option A: use the Xilinx tools on the EPFL servers; if the EPFL license for the Ethernet core expires, contact Alain Vachoux.
+Option B: with an account on xilinx.com, apply for an evaluation license for the tri-mode Ethernet core. You should receive by mail a .lic file to be added to Vivado's License Manager. Note that if the Ethernet core has been modified/regenerated in absence of a valid license, having a valid license won't make it work right away; you will need to re-generate the core again with the valid license in place, and then rerun the whole synthesis/implementation flow.
+
+The documentation of the board and several support files are at http://www.xilinx.com/support/documentation-navigation/design-hubs/dh0043-kcu105-evaluation-kit-hub.html.
+
+How to run the flow
+===================
+
+1) Check out the Git repository "ustogo"; our code is in MatlabFlow\. Also check out the repository "fpgabeamformer".
+
+2) To get into the setup we're using these days, you will need to add a few bits of configuration. In ustogo\MatlabFlow\src\PhantomGeneration\src, overwrite Create1DProbe.m with Create1DProbe_LightProbe.m, and Create2DProbe.m with Create2DProbe_32x32.m. Sometimes for testing purposes it is faster to test with a probe with fewer elements, which can also be changed Create1DProbe/Create2DProbe.m.
+
+3) Now open in Matlab MatlabFlow\src\TopLevel.m. Edit the line "test_file = ...;" and make it point to a configuration script on your disk matching the desired configuration - for example, refer to "tests.txt" in this folder.
+**IMPORTANT**: in this configuration script, edit at least the paths according to your disk structure!
+**IMPORTANT**: the RTL generation will be done according to the last enabled test in this configuration script, so if you have multiple of them, choose the last one wisely! (However, multiple simulation outputs can be generated and they will mostly be automatically sorted in different folders, so there is value in running multiple tests from within a single script).
+**IMPORTANT**: the settings in the test files need to conform to several system constraints. Refer to the sample files in doc/ for examples.
+***** IMPORTANT: multi-mode bitstream flow: *****
+- This is to create a bitstream that can support multiple modes for zone/compound imaging.
+- a) Prepare a tests.txt with one test for each of the desired modes (e.g. 2D with: 1-zone, 2-zone, 4-zone, 8-zone, 5-compounding, 9-compounding).
+     The tests must have the same "major" parameters (e.g. radial line count, either 2D or 3D, etc.). However it should be fine to have all the steered/exact_static/dynamic permutations in the file, if desired, as well as different phantoms. (Additional information atop GenerateHDL.m but this is a quick summary).
+- b) Run TopLevel once. (i.e. step 4 below).
+- c) Without closing Matlab, check that "offset_min_universal" and "offset_max_universal" are now in your workspace, with size (radial_lines, 1). Edit TopLevel to change "first_run = 1" to "first_run = 0".
+- d) Rerun TopLevel for a second time on the whole test suite, and then the FPGA flow as usual. [This of course wastes time. The values of offset_min_universal/offset_max_universal can be saved so that TopLevel only needs to be run once - but this is only safe if the set of configuration runs is exactly the same]. 
+
+4) Now run TopLevel.m (change path to this script's location if requested).
+At the end of beamforming, Matlab will automatically launch a script to generate coefficient tables and testing structures. This script can also be launched manually and separately, like this: (**IMPORTANT**: adjust the paths!)
+
+bf_rtl_path = 'C:/fpgabeamformer/BeamformerIP/BeamformerIP.srcs/sources_1/new';
+sc_rtl_path = 'C:/fpgabeamformer/ScanConverterIP/ScanConverterIP.srcs/sources_1/new';
+sim_path = 'C:/fpgabeamformer/data/';
+[adc_precision, offset_min] = GeneratePlatformHDL(probe, image, target_phantom, zone_count, compound_count, downsampling_factor, tx_delay, rx_delay, sim_path, bf_rtl_path, sc_rtl_path, apod_full, offset_min, offset_max, 1, 1, rf);
+
+5) Parameters like TRANSDUCER_ELEMENTS, FILTER_DEPTH, AZIMUTH_LINES and ELEVATION_LINES are hardcoded from the Matlab script and through the RTL generation process. The parameter NAPPE_BUFFER_DEPTH however can be edited, either via the top file fpgabeamformer/BeamformerIP/BeamformerIP.srcs/sources_1/imports/new/BeamformerIP.v (for simulation, via the testbench fpgabeamformer/BeamformerIP/BeamformerIP.srcs/sim_1/new/testbench.sv ) or, once instantiated as an IP, via the Vivado configuration GUI.
+
+**IMPORTANT**: when creating a 2D bitstream, it may be desirable to keep ILAs enabled (for debugging) or not (for bitstream generation speed and to reduce resource utilization). This can be controlled with the WITH_ILAS parameter in BeamformerIP/BeamformerIP.srcs/sources_1/new/parameters.v.
+
+6) A simulation of the BeamformerIP can now be launched. At first launch, it will fail but will at least create/cleanup the folder BeamformerIP\BeamformerIP.sim\sim_1\behav. Copy into it the files mem_init*.txt from BeamformerIP\BeamformerIP.srcs\sources_1\new. Then hit "Relaunch simulation" and choose a duration.
+
+This can be more quickly done with the following, to be copied into the "Tcl console" tab at the bottom of Vivado (also triggers Step 7):
+
+set beamformer_path "C:/fpgabeamformer/BeamformerIP"
+file copy -force {*}[glob -directory $beamformer_path/BeamformerIP.srcs/sources_1/new mem_init_*.txt] $beamformer_path/BeamformerIP.sim/sim_1/behav
+relaunch_sim
+run all
+
+**IMPORTANT**: by default, the simulation will pick up RF data from the phantom that was used to generate the HDL files (passed via a `define BENCHMARK in parameters.v). However it's possible to build a library of RF data (e.g. run the previous steps multiple times with different target phantoms) and then choose which phantom to simulate, by overriding the lines "localparam benchmark = `BENCHMARK;" and "static string path = `SIM_PATH;" atop testbench.sv. Other parameters, like `RF_DEPTH and `ZERO_OFFSET, might also need adjustments.
+
+**IMPORTANT: look at NOTE 1 for information on simulation modes.**
+
+7) Now run the simulation again, "Run All" is best as it will go through the complete dataset then stop automatically. The simulation will save to disk files named fpgabeamformer\data\[target_phantom]\*\[target_phantom]_nappe*.txt with the simulation outcomes. These can be compared to the Matlab reference (if a beamformed reference image is available) with this script:
+
+cd(.....);
+difference = CompareBeamformingResults(ext_target_phantom, 1, image, bf_im);
+
+where the parameter represents which image nappe to compare (in the range 1 : image.radius_lines, so long as that nappe's beamforming has been simulated) and the output of the function is a difference metric (sqrt of the sum of the image differences).
+
+Additional debug scripts are available - DebugRTL and Compare2DImage. For example (for 2D only):
+
+Compare2DImage('C:/fpgabeamformer/data/pointgrid2D/zone_1/sim_nappes', '', image, bf_im);
+
+At the end of the BeamformerIP simulation, once the nappe files are created, it is also possible to run a simulation of the ScanConverterIP project. Just open that project, check the configuration parameters on top of testbench.sv (same caveats on `BENCHMARK and `SIM_PATH), and do
+
+relaunch_sim; run all
+
+(note: it is also possible, to save time, to use Matlab data to produce the inputs to the ScanConverterIP, instead of running a full BeamformerIP simulation too. Check the Matlab script SaveNappesToDisk. In the SC testbench.sv, files will need to be loaded from "matlab_nappes" replacing the string "sim_nappes").
+This will leave a file fpgabeamformer\data\[target_phantom]\*\[target_phantom]_output.txt with the scan-converted image. It is possible to check that against the Matlab with
+
+diff_metric = CompareScanConversionResults(probe, dest_dir, ext_target_phantom, 'azi-rad', floor(size(bf_im, 3) / 2), 153, 128, image, downsampling_factor, bf_im);
+(assumes that this is a 3D image, rendered into 153x128 pixels, and that we want to compare the mid-elevation slice. Check the documentation/parameters atop testbench.sv and
+CompareScanConversionResults to do something different).
+
+8) A synthesis of the BeamformerIP can be launched for testing purposes. The current default .xdc file (BeamformerIP\BeamformerIP.srcs\constrs_1\new\synthesis.xdc) sets a target clock period of 10ns -> 100 MHz.
+
+9) In project "BeamformerIP" (you can also see: https://www.youtube.com/watch?v=8hzzVhPw6uw), you will need to package the IP. This can be accessed from two places: from the Tools menu -> Create and Package IP -> Package your current project, or from the left pane Project Manager -> Package IP. The former does a full rescan of the code of the IP and resets packaging parameters to defaults; the latter reuses most of the settings of the last packaging run. It's usually ok to use the second command but you will need the first if you apply any "major" changes, e.g. instantiating a new sub-IP in the project, adding a new port or parameter, etc.
+
+10) Regardless of which option chosen in the previous step, continue as follows:
+Deploy the IP into "BeamformerIP/" (should be the default) (confirm overwriting).
+Select "Include .xci files".
+In the "Identification" tab, choose vendor = lsi.epfl.ch, display name = BeamformerIP, description = BeamformerIP.
+**IMPORTANT**: every time, bump up the IP's version by 0.1 from the previous run. This is so that the overall project will detect an IP upgrade and will automatically prompt you to use the latest BeamformerIP.
+In the "File Groups" tab, choose "Synthesis", "Add Files", click on "+", and select all the mem_init*.txt files under "sources_1/new". These files are the delay steering coefficients and the apodization coefficients. This must be done because Vivado does not realize that the .txt files should be packaged with the project. Another nagging thing - if Vivado for some reason adds the .txt files at the bottom of the list, you have to drag them up, as the last file in the Synthesis group has to be an HDL one.
+**IMPORTANT**: also in the "Synthesis" group, REMOVE the constraint file synthesis.xdc from the package.
+In the "Review and Package" tab, click "Package IP".
+This will package the BeamformerIP for use in the overall design.
+
+This can be more quickly done with the following, to be copied into the "Tcl console" tab at the bottom of Vivado:
+[REMEMBER TO ADJUST THE PATH - line set dir - AND TO BUMP UP THE IP VERSION - line set_property version!]
+
+set dir C:/fpgabeamformer/BeamformerIP
+ipx::package_project -root_dir $dir -vendor lsi.epfl.ch -library user -taxonomy /UserIP -force
+cd $dir
+set_property version 4.46 [ipx::current_core]
+set_property vendor lsi.epfl.ch [ipx::current_core]
+set_property display_name BeamformerIP [ipx::current_core]
+set_property description BeamformerIP [ipx::current_core]
+set_property core_revision 1 [ipx::current_core]
+ipx::remove_file BeamformerIP.srcs/constrs_1/new/synthesis.xdc [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]
+set filenames [glob BeamformerIP.srcs/sources_1/new/mem_init_*.txt]
+foreach f $filenames {
+    ipx::add_file $f [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]
+    set_property type text [ipx::get_files $f -of_objects [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]]
+    ipx::reorder_files -after $f BeamformerIP.srcs/sources_1/new/BeamformerIP.v [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]
+}
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path $dir
+
+10b) A similar thing should be done with the ScanConverterIP. Open the project, then package it just like the instructions above - but several steps are simplified, e.g. (**IMPORTANT**: same caveat as above about the version of the IP and the directory):
+
+set dir C:/fpgabeamformer/ScanConverterIP
+ipx::package_project -root_dir $dir -vendor lsi.epfl.ch -library user -taxonomy /UserIP -force
+cd $dir
+set_property version 1.211 [ipx::current_core]
+set_property vendor lsi.epfl.ch [ipx::current_core]
+set_property display_name ScanConverterIP [ipx::current_core]
+set_property description ScanConverterIP [ipx::current_core]
+set_property core_revision 1 [ipx::current_core]
+ipx::remove_file ScanConverterIP.srcs/constrs_1/new/clock_constraint.xdc [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path $dir
+
+11) In project "imager":
+The project should already have in its database a reference to the newly created IP. You can ensure by going to Project Manager -> Project Settings -> IP -> Repository Management and making sure there's an entry pointing to "BeamformerIP/1". In the bottom pane, you should see that the BeamformerIP has been detected.
+If you open the block design "eth_top/base_microblaze_design", a yellow bar should appear notifying you that there's upgraded IP. You can either follow the prompts and upgrade the instance of the BeamformerIP, or delete it, recreate it and click on the green bar "Run Connection Automation" to re-connect the IP to the AXI interconnect. (IMPORTANT: the pin phy_rst_n of axi_ethernet_0 has to remain disconnected, that's on purpose!).
+
+export_ip_user_files -of_objects [get_ips  system_i_bak_BeamformerIP_0_1] -no_script -reset -quiet
+upgrade_ip -vlnv lsi.epfl.ch:user:BeamformerIP:4.11 [get_ips  system_i_bak_BeamformerIP_0_1] -log ip_upgrade.log
+
+12) A simulation of the whole platform can now be launched. Like for the simulation of the standalone IP, you will need to copy the mem_init_* files into imager\imager.sim\sim_1\behav once the simulator has created/refreshed that folder.
+
+13) At this point you can synthesize the design (some timing violations at this stage are known to be OK), then go through implementation (all timing violations must be gone now), bitstream generation, and File -> Export -> Export Hardware ("local to project", with or without bitstream).
+
+Some verbose warnings can be, optionally, masked with the following lines:
+
+# Register X and Y are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+set_msg_config -id {Constraints 18-1079} -suppress
+# Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net
+set_msg_config -id {Synth 8-5396} -suppress
+# Rule violation (DPIP-2) Input pipelining - DSP X is not pipelined. Pipelining DSP48 input will improve performance.
+# Rule violation (DPOP-3) PREG Output pipelining - DSP X output Y is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+set_msg_config -id {DRC 23-20} -suppress
+
+14) A post-implementation simulation can be optionally run. To simulate an application running on the Microblaze:
+- In the SDK (see Step 17), write the application. Generate a linker script for it and choose to map all program segments to local BRAM. The application must be small enough to fit in the Microblaze local memory (an error will be thrown otherwise).
+- Once the .elf has been generated, back in Vivado, add it to the project in Project Manager, then associate it to the memories and launch the simulation.
+- Refer to: https://forums.xilinx.com/xlnx/attachments/xlnx/EDK/29275/1/pa_viv_edk_sim.pdf
+- A reference modified "helloworld" that uses a tiny space and shows how to probe the beamformer is included.
+
+15) Program the FPGA. Connect it with a USB cable in the "JTAG" connector and switch it on, then: Program and Debug -> Hardware Manager -> Open Target -> Auto Connect -> (it should find the board) -> Program Device -> xcku040_0 -> accept all the defaults; a timing calibration and verification will also take place and should show "PASS".
+
+16) Now File -> Launch SDK. In the SDK window:
+- If reusing existing application:
+Since exporting the hardware in step 13, the software may need refreshing. If errors show up: Ensure that the BSP "demo_board_bsp" points to the updated hardware specs via Properties -> Project References; select either the BSP or/and the actual application and issue a "Refresh" or a "Clean".
+- If writing from scratch:
+First create a New -> Project -> Xilinx -> Hardware Platform Specification, and point the dialog to "system_top.hdf" that you just created in step 13 and which is by default in the .sdk folder. Then New -> Project -> Xilinx -> Board Support Package, point it to the "hardware platform" created just before, and ensure the "package OS" is "standalone". When prompted, include in the BSP the library "lwIP" (low-weight IP) for Ethernet communication. Now New -> Project -> Xilinx -> Application Project, choosing "use existing" and pointing it to the newly created BSP, and "lwIP Echo Server" as application template.
+
+17) Choose the application project from step 16 and Run As -> Launch on Hardware (System Debugger).
+
+18) If you also want to program the board's Flash chip so that the bitstream can be programmed on the board without Vivado involvement (for demos),
+    proceed as follows. The boot sequence of such a design is:
+    a) When pushing the button "PROG" on the board, the board looks up in the Flash at address 0x0 for a bitstream to load. At address 0x0 in the Flash must
+       thus be programmed a valid bitstream for the FPGA, which should be the "imager" one generated as described above.
+    b) This bitstream is loaded and run. The issue, by doing this alone, is that the Microblaze does not know what to do next. (A software app could be
+       loaded via Vivado at this point but we are trying to avoid the need for Vivado now). However, since the Microblaze is configured with a small
+       Local Memory inside the FPGA, a boot application can be pre-programmed into the bitstream into the local memory. Ideally this would be the final
+       application but that is too large to fit into the local memory. So the process is in two steps. The local memory is pre-filled with a small
+       bootloader application "QSPI_bootloader" (included in the imager's SDK folder). This application is automatically run as soon as the bitstream
+       is programmed into the FPGA.
+    c) The QSPI_bootloader does only one thing: it looks again into the Flash memory at a given offset (src/blconfig.h) where a larger application
+       can be stored. (This is possible since the imager design includes a QSPI flash controller). This application is copied into the external DDR
+       and control is yielded to it. At this point, the platform is fully running.
+    To enable this flow, the following must be done:
+    - Generate a compound "download.bit" bitstream that contains the HW bitstream and the SPI bootloader application fitted in the MB's local memories:
+      SDK -> Xilinx Tools -> Program FPGA -> select QSPI_bootloader.elf file under "ELF/MEM File to Initialize in Block RAM" -> Program.
+      This will run the "updatemem" command that will merge the bitstream and the ELF file and output a "download.bit" file into the hw_platform folder.
+      This step can be run without the board attached.
+    - Connect the board
+    - Ensure the SW15 DIP switches are set to "000000" on the board
+    - Program the user application into the flash:
+      SDK -> Xilinx Tools -> Program Flash -> "Offset" should be the same as specified in src/blconfig.h of QSPI_bootloader
+                                              "Image File" should be the ELF file of the user app (e.g. demo_project.elf)
+                                              "Flash Type" should be "n25q256-1.8v-spi-x1_x2_x4" (in SDK2016.1) or “mt25qu256-spi-x1_x2_x4” (in SDK2017.2)
+                                              "Convert ELF to bootloadable SREC format and program" = yes
+                                              Optionally, enable "Blank check after erase" and "Verify after flash" (slow!)
+                                              Press "Program".
+
+    - Program the main bitstream and the bootloader application into the flash:
+      SDK -> Xilinx Tools -> Program Flash -> "Offset" = 0x0
+                                              "Image File" should be the download.bit file in the hw_platform project folder
+                                              "Flash Type" should be "n25q256-1.8v-spi-x1_x2_x4" (in SDK2016.1) or “mt25qu256-spi-x1_x2_x4” (in SDK2017.2)
+                                              "Convert ELF to bootloadable SREC format and program" = no
+                                              Optionally, enable "Blank check after erase" and "Verify after flash" (slow!)
+                                              Press "Program".
+    At this point, pushing PROG on the board will launch the application directly.
+
+How to run the demo
+===================
+
+Pre-requisites: an Ethernet cable capable of Gigabit speeds; at least one USB-to-microUSB cable (better two); the board and its power supply; a Windows laptop with the toolchain described above (Vivado, Visual Studio, possibly Matlab), and with the Ethernet port configured to 192.168.1.1, mask 255.255.255.0, gateway 192.168.1.10. Connect the Ethernet cable between the laptop and the board and boot the board.
+
+a) Follow the steps above to program a bitstream onto the FPGA (either via Vivado, step 15, or standalone, which means having previously run step 18 and now pushing the PROG button; a LED blinks to confirm the programming).
+
+b) USB cables between the computer and the USB/JTAG and USB/UART connectors on the board are strictly optional. The former is only necessary if Vivado
+   is used to program the board (step 15). The latter one is strictly for debugging purposes to check diagnostic output from the board. (Refer to the
+   Windows Device Manager to see what COM number was assigned to the UART cable).
+
+c) On the board, push the SW5 "CPU RST" button to reset the CPU. If you have the optional UART cable connected and you are listening on the corresponding COM port, you will see debug information being printed at boot. The board should initialize the Ethernet PHY, recognize the link with the laptop, bring it up with a speed of 1000 (Mbps), and start listening on address 192.168.1.10 port 7.
+
+d) Now launch the Visual Studio "VirtualScope" GUI. Push the "Setup" button to configure the IP and port of the board (point above) and the clock frequency of the generated bitstream (this latter number is only used for the estimation of the theoretical frame rate). If "Save" is hit in this dialog, the settings are saved to disk in a config.txt file in the same directory as the GUI executable and automatically reused upon relaunch (IMPORTANT: but verify that this file is there, especially when launching the executable from outside Visual Studio, or if switching between Debug/Release builds). Now push the "Connect" button at the lower right; in few seconds, the message should go from "Disconnected" to "Connected". Select a phantom from the dropdown [this automatically loads a configuration .txt that Matlab saves alongside the phantom, which sets parameters like element counts etc.], other imaging settings, and push one of the Start buttons (**IMPORTANT: look at NOTE 1**). The GUI should load the reference images from Matlab (cached for speed) and live images from the board. If the UART cable is connected, debug messages will be shown while the beamformer runs. Note that the GUI can optionally dump [target_phantom]_nappe*.txt files too, which can be again compared against the Matlab reference.
+
+NOTE 1
+======
+
+The beamformer can run in different modes:
+1) Fully controlled by the Microblaze. The GUI, via the Microblaze, fills the BRAMs of the beamformer with echo data, then explicitly orders the BF to beamform on a nappe-by-nappe basis with multiple commands. The MB then refills the BRAMs, etc., until completion of the image.
+2) Driven by the Microblaze, but "streaming". The GUI, via the Microblaze, keeps sending echo data to the beamformer; the beamformer independently figures when it has enough data to reconstruct a nappe, until the end of the image.
+3) Driven by the Aurora interface. The GUI, via the Microblaze, tells the beamformer to listen to the Aurora interface (over an AXI Stream FIFO); the beamformer then behaves like in 2). This mode is the "final demo setup".
+
+Mode 1) can be used in either 2D or 3D. Mode 2) is only available in 2D, because it requires both BRAM ports for the streaming operation, which is incompatible with the 2-element-in-single-BRAM packing used for 3D. Mode 3) is also only for 2D, for the same reason plus the fact that no Aurora 3D probe is available.
+
+It is possible to simulate and run on FPGA these three modes by:
+1) For an RTL simulation, choose "USE_AXI_FIFO = 0" and "STREAMING_RF_INPUT = 0" atop testbench.sv (defaults)
+   For an FPGA simulation, in the GUI, push "Start (UB)"
+2) For an RTL simulation, choose "USE_AXI_FIFO = 0" and "STREAMING_RF_INPUT = 1" atop testbench.sv
+   For an FPGA simulation, in the GUI, push "Start (Streaming)"
+3) For an RTL simulation, choose "USE_AXI_FIFO = 1" and "STREAMING_RF_INPUT = 1" atop testbench.sv
+   For an FPGA simulation, in the GUI, push "Start (Listen)" or "Start (Listen Forever)". The former reconstructs a single frame per click, the latter keeps reconstructing images forever from the Aurora inputs.
+
+
+=================================================================
+GUI/FPGA Communication FSMs
+=================================================================
+
+-----------------------------------------------------------------
+Microblaze mode
+-----------------------------------------------------------------
+
+            GUI                            FPGA
+         
+        DISCONNECTED                     AWAITING<--------+
+            ^|                               |            |
+    disconn.||connect                        |            |
+            |v                               |            |
+  +----->CONNECTED                           |            |
+  |          |                               |            |
+  |          |           options#            |            |
+  |          +------------------------------>|            |
+  |          |            ok#                |            |
+  |          |<------------------------------+            |
+  |          |                               |            |
+  |          |                               |            |
+  |  +------>|                               v            |
+  |  |       |                       RECEIVEDOPTIONS<--+  |
+  |  |       |                               |         |  |
+  |  |       |           NN x#               |         |  |
+  |  |       +------------------------------>|         |  |
+  |  |       |                               |         |  |
+  |  |       v                               |         |  |
+  |  | SENDINGRF                             |         |  |
+  |  |       |                               |         |  |
+  |  |       |            ok#                |         |  |
+  |  |       |<------------------------------+         |  |
+  |  |       |                               |         |  |
+  |  |       |                               v         |  |
+  |  |       |                          RECEIVINGRF    |  |
+  |  |       |                               |         |  |
+  |  |       |           (RF data)           |         |  |
+  |  |       +==============================>|         |  |
+  |  |       |           startbf#            |         |  |
+  |  |       +------------------------------>|         |  |
+  |  |       |                               |         |  |
+  |  |       v                               |         |  |
+  |  |  AWAITINGBF                           |         |  |
+  |  |       |                               |         |  |
+  |  |       |            ok#                |         |  |
+  |  |       |<------------------------------+         |  |
+  |  |       |                               |         |  |
+  |  |       |                               v         |  |
+  |  |       |                           RUNNINGBF     |  |
+  |  |       |                               |         |  |
+  |  |       |     (!last) ####sendrf#       |         |  |
+  |  |       +------------------------------>|         |  |
+  |  | !last |                               |         |  |
+  |  +-------+                               |         |  |
+  |          |  (!last) ok# (interpreted as  |         |  |
+  |          |      unlock for CONNECTED)    |         |  |
+  |          |<------------------------------+ !last   |  |
+  |          |                               |---------+  |
+  |          |                               |            |
+  |          |last                       last|            |
+  |          |         sendnappes#           |            |
+  |          +------------------------------>|            |
+  |          |                               |            |
+  |          v                               v            |
+  |    RECEIVINGNAPPES (IMAGE)         SENDINGNAPPES      |
+  |          |                               |            |
+  |          |         (voxel data)          |            |
+  |          |<==============================|            |
+  |          |    ok# (after every nappe)    |            |
+  |          |<------------------------------+            |
+  |          |                               |            |
+  +----------+                               +------------+
+
+-----------------------------------------------------------------
+Streaming mode
+-----------------------------------------------------------------
+
+            GUI                            FPGA
+         
+        DISCONNECTED                     AWAITING<--------+
+            ^|                               |            |
+    disconn.||connect                        |            |
+            |v                               |            |
+  +----->CONNECTED                           |            |
+  |          |                               |            |
+  |          |           options#            |            |
+  |          +------------------------------>|            |
+  |          |            ok#                |            |
+  |          |<------------------------------+            |
+  |          |                               |            |
+  |          |                               |            |
+  |          |                               v            |
+  |          |                       RECEIVEDOPTIONS      |
+  |          |                               |            |
+  |          |           NN x#               |            |
+  |          +------------------------------>|            |
+  |          |                               |            |
+  |          v                               |            |
+  |    SENDINGRF                             |            |
+  |          |                               |            |
+  |          |            ok#                |            |
+  |          |<------------------------------+            |
+  |          |                               |            |
+  |          |                               v            |
+  |          |                          RECEIVINGRF       |
+  |          |                               |            |
+  |          |           (RF data)           |            |
+  |          +==============================>|            |
+  |          |         sendnappes#           |            |
+  |          +------------------------------>|            |
+  |          |                               |            |
+  |          |                               |            |
+  |          |                               v            |
+  |          |                           WAITINGBF        |
+  |          |                               |            |
+  |          |                               |            |
+  |          |                               |            |
+  |          v                               v            |
+  |    RECEIVINGNAPPES (IMAGE)         SENDINGNAPPES      |
+  |          |                               |            |
+  |          |         (voxel data)          |            |
+  |          |<==============================|            |
+  |          |    ok# (after every nappe)    |            |
+  |          |<------------------------------+            |
+  |          |                               |            |
+  +----------+                               +------------+
+  
+-----------------------------------------------------------------
+FIFO/Aurora mode
+-----------------------------------------------------------------
+
+            GUI                            FPGA
+         
+        DISCONNECTED                     AWAITING<--------+
+            ^|                               |            |
+    disconn.||connect                        |            |
+            |v                               |            |
+  +----->CONNECTED                           |            |
+  |          |                               |            |
+  |          |           options#            |            |
+  |          +------------------------------>|            |
+  |          |            ok#                |            |
+  |          |<------------------------------+            |
+  |          |                               |            |
+  |          |                               |            |
+  |          |                               v            |
+  |          |                       RECEIVEDOPTIONS      |
+  |          |                               |            |
+  |          |           NN x#               |            |
+  |          +------------------------------>|            |
+  |          |                               |            |
+  |          |                               |            |
+  |          |                               |            |
+  |          |                               v            |
+  |          |                           WAITINGBF        |
+  |          |                               |            |
+  |          |                               |            |
+  |          |                               |            |
+  |          v                               v            |
+  |    RECEIVINGNAPPES (IMAGE)         SENDINGNAPPES      |
+  |          |                               |            |
+  |          |         (voxel data)          |            |
+  |          |<==============================|            |
+  |          |    ok# (after every nappe)    |            |
+  |          |<------------------------------+            |
+  |          |                               |            |
+  +----------+                               +------------+
+
+-----------------------------------------------------------------
+Re-ScanConvert mode
+-----------------------------------------------------------------
+
+            GUI                            FPGA
+         
+        DISCONNECTED                     AWAITING<--------+
+            ^|                               |            |
+    disconn.||connect                        |            |
+            |v                               |            |
+  +----->CONNECTED                           |            |
+  |          |                               |            |
+  |          |            resc$              |            |
+  |          +------------------------------>|            |
+  |          |            ok#                |            |
+  |          |<------------------------------+            |
+  |          |                               |            |
+  |          |                               |            |
+  |          |                               v            |
+  |          |                       RECEIVEDOPTIONS      |
+  |          |                               |            |
+  |          |           MM x#               |            |
+  |          +------------------------------>|            |
+  |          |            ok#                |            |
+  |          |<------------------------------+            |
+  |          |                               |            |
+  |          |                               |            |
+  +----------+                               +------------+
+  
+=================================================================
+BEAMFORMER REGISTER INTERFACE
+=================================================================
+
+BASE + 0x0 Status Register
+Read-only
+Provides information on the status of the beamformer
+Bit 0: "ready"
+Bit 1: "busy"
+Bits 16:31: counter of nappes completed and saved in memory. Note that this counter keeps going up over subsequent reconstructions and also subsequent insonifications of zone/compound imaging.
+
+BASE + 0x4 FIFO Register
+Read-only
+Obsolete.
+
+BASE + 0x8 BRAM Register
+Write-only
+In 3D: Allows to write two elements' worth of echo data
+Bits 0:15: element 1
+Bits 16:31: element 2
+Where elements 1 and 2 are aligned on the same transducer column (same X), element 1 above element 2
+In 2D: Allows to write one element's echo data at a time
+
+BASE + 0xC Command Register
+Write-only
+Gives commands to the beamformer
+Bit 0: "start_beamforming", if at 1 starts a beamforming run (used in Microblaze mode)
+Bit 1: "use_aurora_interface", if at 1 gets input data from the AXI Stream port over Aurora (only available in 2D and requires "use_streaming_inputs" too), else from the AXI Slave port from the Microblaze
+Bit 2: "use_streaming_inputs", if at 1 uses Streaming mode (reconstruction triggered when enough samples for a nappe), if at 0 uses Microblaze mode (reconstruction triggered by bit 0 also at 1)
+Bit 3: "flush_aurora_fifo", when set at 1 flushes data out of the AXI Stream interface without saving it anywhere. Useful at boot to flush any stale information that could be present on the Aurora channel.
+
+BASE + 0x10 Options Register
+Read/Write
+Configures zone imaging/compounding features
+Bits 0:4: number of zones in the azimuth direction
+Bits 5:9: number of zones in the elevation direction (set to 1 for 2D imaging, else to the same value of the azimuth zones)
+Bits 14:10: number of images to compound, if image compounding
+
+BASE + 0x14 RF Depth Register
+Read/Write
+Allows to specify the depth of the RF data window, necessary to know this to properly reset counters at the end of the RF data.
+Set this to the same value as the RF samples that will be sent per insonification.
+
+BASE + 0x18 Zero Offset Register
+Read/Write
+Allows to specify the data offset that actually represents "zero time" (i.e. to start applying TGC and delay calculation).
+The value can be positive (RF data starts AFTER time 0) or negative (RF data starts BEFORE time 0, i.e. the first samples are padding).
+The offset value is taken from the LSBs of the register, exactly how many LSBs depending on the depth of the neded RF window (e.g. ~13).
+
+BASE + 0x1C and following: StatusN (Debug) Registers
+Read-only
+Additional debug information from the internal status of the beamformer.
+As the associations may change often, check against BeamformerIP_S00_AXI.v.

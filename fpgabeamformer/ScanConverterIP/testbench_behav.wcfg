@@ -1,0 +1,1527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="981973749999fs"></ZoomStartTime>
+      <ZoomEndTime time="982401250001fs"></ZoomEndTime>
+      <Cursor1Time time="982330000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="336" />
+   <wvobject fp_name="/testbench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_aclk" type="logic">
+      <obj_property name="ElementShortName">s00_axi_aclk</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_aresetn" type="logic">
+      <obj_property name="ElementShortName">s00_axi_aresetn</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_awid" type="array">
+      <obj_property name="ElementShortName">s00_axi_awid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awid[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_awaddr" type="array">
+      <obj_property name="ElementShortName">s00_axi_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_awlen" type="array">
+      <obj_property name="ElementShortName">s00_axi_awlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_awsize" type="array">
+      <obj_property name="ElementShortName">s00_axi_awsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_awburst" type="array">
+      <obj_property name="ElementShortName">s00_axi_awburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_awlock" type="logic">
+      <obj_property name="ElementShortName">s00_axi_awlock</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awlock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_awcache" type="array">
+      <obj_property name="ElementShortName">s00_axi_awcache[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awcache[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_awprot" type="array">
+      <obj_property name="ElementShortName">s00_axi_awprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_awqos" type="array">
+      <obj_property name="ElementShortName">s00_axi_awqos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awqos[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_awregion" type="array">
+      <obj_property name="ElementShortName">s00_axi_awregion[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awregion[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_awuser" type="array">
+      <obj_property name="ElementShortName">s00_axi_awuser[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awuser[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_awvalid" type="logic">
+      <obj_property name="ElementShortName">s00_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_awready" type="logic">
+      <obj_property name="ElementShortName">s00_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_wdata" type="array">
+      <obj_property name="ElementShortName">s00_axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_wstrb" type="array">
+      <obj_property name="ElementShortName">s00_axi_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_wlast" type="logic">
+      <obj_property name="ElementShortName">s00_axi_wlast</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_wuser" type="array">
+      <obj_property name="ElementShortName">s00_axi_wuser[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wuser[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_wvalid" type="logic">
+      <obj_property name="ElementShortName">s00_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_wready" type="logic">
+      <obj_property name="ElementShortName">s00_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_bid" type="array">
+      <obj_property name="ElementShortName">s00_axi_bid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_bid[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_bresp" type="array">
+      <obj_property name="ElementShortName">s00_axi_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_buser" type="array">
+      <obj_property name="ElementShortName">s00_axi_buser[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_buser[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_bvalid" type="logic">
+      <obj_property name="ElementShortName">s00_axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_bready" type="logic">
+      <obj_property name="ElementShortName">s00_axi_bready</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_arid" type="array">
+      <obj_property name="ElementShortName">s00_axi_arid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arid[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_araddr" type="array">
+      <obj_property name="ElementShortName">s00_axi_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_araddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_arlen" type="array">
+      <obj_property name="ElementShortName">s00_axi_arlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_arsize" type="array">
+      <obj_property name="ElementShortName">s00_axi_arsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_arburst" type="array">
+      <obj_property name="ElementShortName">s00_axi_arburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_arlock" type="logic">
+      <obj_property name="ElementShortName">s00_axi_arlock</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arlock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_arcache" type="array">
+      <obj_property name="ElementShortName">s00_axi_arcache[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arcache[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_arprot" type="array">
+      <obj_property name="ElementShortName">s00_axi_arprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_arqos" type="array">
+      <obj_property name="ElementShortName">s00_axi_arqos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arqos[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_arregion" type="array">
+      <obj_property name="ElementShortName">s00_axi_arregion[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arregion[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_aruser" type="array">
+      <obj_property name="ElementShortName">s00_axi_aruser[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_aruser[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_arvalid" type="logic">
+      <obj_property name="ElementShortName">s00_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_arready" type="logic">
+      <obj_property name="ElementShortName">s00_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_rid" type="array">
+      <obj_property name="ElementShortName">s00_axi_rid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_rid[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_rdata" type="array">
+      <obj_property name="ElementShortName">s00_axi_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_rresp" type="array">
+      <obj_property name="ElementShortName">s00_axi_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_rlast" type="logic">
+      <obj_property name="ElementShortName">s00_axi_rlast</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_rlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_ruser" type="array">
+      <obj_property name="ElementShortName">s00_axi_ruser[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_ruser[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_rvalid" type="logic">
+      <obj_property name="ElementShortName">s00_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/s00_axi_rready" type="logic">
+      <obj_property name="ElementShortName">s00_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_rready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_aclk" type="logic">
+      <obj_property name="ElementShortName">m00_axi_aclk</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_aresetn" type="logic">
+      <obj_property name="ElementShortName">m00_axi_aresetn</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_awid" type="array">
+      <obj_property name="ElementShortName">m00_axi_awid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_awid[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_awaddr" type="array">
+      <obj_property name="ElementShortName">m00_axi_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_awlen" type="array">
+      <obj_property name="ElementShortName">m00_axi_awlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_awlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_awsize" type="array">
+      <obj_property name="ElementShortName">m00_axi_awsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_awsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_awburst" type="array">
+      <obj_property name="ElementShortName">m00_axi_awburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_awburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_awlock" type="logic">
+      <obj_property name="ElementShortName">m00_axi_awlock</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_awlock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_awcache" type="array">
+      <obj_property name="ElementShortName">m00_axi_awcache[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_awcache[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_awprot" type="array">
+      <obj_property name="ElementShortName">m00_axi_awprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_awprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_awqos" type="array">
+      <obj_property name="ElementShortName">m00_axi_awqos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_awqos[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_awvalid" type="logic">
+      <obj_property name="ElementShortName">m00_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_awready" type="logic">
+      <obj_property name="ElementShortName">m00_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_wdata" type="array">
+      <obj_property name="ElementShortName">m00_axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_wstrb" type="array">
+      <obj_property name="ElementShortName">m00_axi_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_wlast" type="logic">
+      <obj_property name="ElementShortName">m00_axi_wlast</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_wlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_wvalid" type="logic">
+      <obj_property name="ElementShortName">m00_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_wready" type="logic">
+      <obj_property name="ElementShortName">m00_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_bid" type="array">
+      <obj_property name="ElementShortName">m00_axi_bid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_bid[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_bvalid" type="logic">
+      <obj_property name="ElementShortName">m00_axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_bresp" type="array">
+      <obj_property name="ElementShortName">m00_axi_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_bready" type="logic">
+      <obj_property name="ElementShortName">m00_axi_bready</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_arid" type="array">
+      <obj_property name="ElementShortName">m00_axi_arid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_arid[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_araddr" type="array">
+      <obj_property name="ElementShortName">m00_axi_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_araddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_arlen" type="array">
+      <obj_property name="ElementShortName">m00_axi_arlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_arlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_arsize" type="array">
+      <obj_property name="ElementShortName">m00_axi_arsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_arsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_arburst" type="array">
+      <obj_property name="ElementShortName">m00_axi_arburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_arburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_arlock" type="logic">
+      <obj_property name="ElementShortName">m00_axi_arlock</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_arlock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_arcache" type="array">
+      <obj_property name="ElementShortName">m00_axi_arcache[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_arcache[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_arprot" type="array">
+      <obj_property name="ElementShortName">m00_axi_arprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_arprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_arqos" type="array">
+      <obj_property name="ElementShortName">m00_axi_arqos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_arqos[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_arvalid" type="logic">
+      <obj_property name="ElementShortName">m00_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_arready" type="logic">
+      <obj_property name="ElementShortName">m00_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_rid" type="array">
+      <obj_property name="ElementShortName">m00_axi_rid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_rid[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_rdata" type="array">
+      <obj_property name="ElementShortName">m00_axi_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_rresp" type="array">
+      <obj_property name="ElementShortName">m00_axi_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_rlast" type="logic">
+      <obj_property name="ElementShortName">m00_axi_rlast</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_rlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_rvalid" type="logic">
+      <obj_property name="ElementShortName">m00_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/m00_axi_rready" type="logic">
+      <obj_property name="ElementShortName">m00_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">m00_axi_rready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/response_data_queue" type="array">
+      <obj_property name="ElementShortName">response_data_queue[31:0]</obj_property>
+      <obj_property name="ObjectShortName">response_data_queue[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/response_present" type="logic">
+      <obj_property name="ElementShortName">response_present</obj_property>
+      <obj_property name="ObjectShortName">response_present</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/response_ttype" type="logic">
+      <obj_property name="ElementShortName">response_ttype</obj_property>
+      <obj_property name="ObjectShortName">response_ttype</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/response_address" type="array">
+      <obj_property name="ElementShortName">response_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">response_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/returned_data" type="array">
+      <obj_property name="ElementShortName">returned_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">returned_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/quit_simulation" type="logic">
+      <obj_property name="ElementShortName">quit_simulation</obj_property>
+      <obj_property name="ObjectShortName">quit_simulation</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/error_count" type="array">
+      <obj_property name="ElementShortName">error_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">error_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/input_image" type="array">
+      <obj_property name="ElementShortName">input_image[499:0][0:0][63:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">input_image[499:0][0:0][63:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/input_memory" type="array">
+      <obj_property name="ElementShortName">input_memory[31999:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">input_memory[31999:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/output_image" type="array">
+      <obj_property name="ElementShortName">output_image[31:0][37:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">output_image[31:0][37:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/height_pointer" type="array">
+      <obj_property name="ElementShortName">height_pointer[4:0]</obj_property>
+      <obj_property name="ObjectShortName">height_pointer[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/width_pointer" type="array">
+      <obj_property name="ElementShortName">width_pointer[5:0]</obj_property>
+      <obj_property name="ObjectShortName">width_pointer[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/pixel_output" type="array">
+      <obj_property name="ElementShortName">pixel_output[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_output[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/sc_wvalid" type="logic">
+      <obj_property name="ElementShortName">sc_wvalid</obj_property>
+      <obj_property name="ObjectShortName">sc_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/read_ctr" type="array">
+      <obj_property name="ElementShortName">read_ctr[10:0]</obj_property>
+      <obj_property name="ObjectShortName">read_ctr[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/AZIMUTH_LINES" type="array">
+      <obj_property name="ElementShortName">AZIMUTH_LINES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AZIMUTH_LINES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/ELEVATION_LINES" type="array">
+      <obj_property name="ElementShortName">ELEVATION_LINES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ELEVATION_LINES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/IMG_HEIGHT" type="array">
+      <obj_property name="ElementShortName">IMG_HEIGHT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IMG_HEIGHT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/IMG_WIDTH" type="array">
+      <obj_property name="ElementShortName">IMG_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IMG_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/RADIAL_LINES" type="array">
+      <obj_property name="ElementShortName">RADIAL_LINES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RADIAL_LINES[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider282">
+      <obj_property name="label">scan converter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/wdata" type="array">
+      <obj_property name="ElementShortName">wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/waddr" type="array">
+      <obj_property name="ElementShortName">waddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">waddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/wvalid" type="logic">
+      <obj_property name="ElementShortName">wvalid</obj_property>
+      <obj_property name="ObjectShortName">wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/voxel_input_stream_coord_x" type="array">
+      <obj_property name="ElementShortName">voxel_input_stream_coord_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_input_stream_coord_x[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/voxel_input_stream_coord_y" type="array">
+      <obj_property name="ElementShortName">voxel_input_stream_coord_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_input_stream_coord_y[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/rdata" type="array">
+      <obj_property name="ElementShortName">rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/raddr" type="array">
+      <obj_property name="ElementShortName">raddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">raddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/rvalid" type="logic">
+      <obj_property name="ElementShortName">rvalid</obj_property>
+      <obj_property name="ObjectShortName">rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_out_pixel" type="array">
+      <obj_property name="ElementShortName">identity_out_pixel[7:0]</obj_property>
+      <obj_property name="ObjectShortName">identity_out_pixel[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_start" type="logic">
+      <obj_property name="ElementShortName">identity_start</obj_property>
+      <obj_property name="ObjectShortName">identity_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/master_read_data" type="array">
+      <obj_property name="ElementShortName">master_read_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">master_read_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/master_read_address" type="array">
+      <obj_property name="ElementShortName">master_read_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">master_read_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/mst_read_voxel_counter_y" type="array">
+      <obj_property name="ElementShortName">mst_read_voxel_counter_y[16:0]</obj_property>
+      <obj_property name="ObjectShortName">mst_read_voxel_counter_y[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/mst_read_voxel_counter_x" type="array">
+      <obj_property name="ElementShortName">mst_read_voxel_counter_x[16:0]</obj_property>
+      <obj_property name="ObjectShortName">mst_read_voxel_counter_x[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/master_read_start" type="logic">
+      <obj_property name="ElementShortName">master_read_start</obj_property>
+      <obj_property name="ObjectShortName">master_read_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/master_read_done" type="logic">
+      <obj_property name="ElementShortName">master_read_done</obj_property>
+      <obj_property name="ObjectShortName">master_read_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/auto_lc_max_value" type="array">
+      <obj_property name="ElementShortName">auto_lc_max_value[31:0]</obj_property>
+      <obj_property name="ObjectShortName">auto_lc_max_value[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/reg_status" type="array">
+      <obj_property name="ElementShortName">reg_status[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_status[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/reg_IO_mode" type="array">
+      <obj_property name="ElementShortName">reg_IO_mode[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_IO_mode[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_pos_y" type="array">
+      <obj_property name="ElementShortName">identity_pos_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">identity_pos_y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_pos_x" type="array">
+      <obj_property name="ElementShortName">identity_pos_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">identity_pos_x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/pixel_output_stream_coord_x" type="array">
+      <obj_property name="ElementShortName">pixel_output_stream_coord_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_output_stream_coord_x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/pixel_output_stream_coord_y" type="array">
+      <obj_property name="ElementShortName">pixel_output_stream_coord_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_output_stream_coord_y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/activate_sc_proc" type="logic">
+      <obj_property name="ElementShortName">activate_sc_proc</obj_property>
+      <obj_property name="ObjectShortName">activate_sc_proc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/ask_next_identity" type="logic">
+      <obj_property name="ElementShortName">ask_next_identity</obj_property>
+      <obj_property name="ObjectShortName">ask_next_identity</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/bram_data_in" type="array">
+      <obj_property name="ElementShortName">bram_data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_data_in[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">2</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/bram_data_out" type="array">
+      <obj_property name="ElementShortName">bram_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_data_out[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">2</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/bram_write_enable" type="logic">
+      <obj_property name="ElementShortName">bram_write_enable</obj_property>
+      <obj_property name="ObjectShortName">bram_write_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/bram_read_addr" type="array">
+      <obj_property name="ElementShortName">bram_read_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_read_addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/bram_write_addr" type="array">
+      <obj_property name="ElementShortName">bram_write_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_write_addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_valid_output" type="logic">
+      <obj_property name="ElementShortName">identity_valid_output</obj_property>
+      <obj_property name="ObjectShortName">identity_valid_output</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc_out_data" type="array">
+      <obj_property name="ElementShortName">sc_proc_out_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sc_proc_out_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/out_pixel_buffer" type="array">
+      <obj_property name="ElementShortName">out_pixel_buffer[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_pixel_buffer[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/reg_lc_max" type="array">
+      <obj_property name="ElementShortName">reg_lc_max[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_lc_max[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/reg_input_lc_max_value" type="array">
+      <obj_property name="ElementShortName">reg_input_lc_max_value[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_input_lc_max_value[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider127">
+      <obj_property name="label">log comp</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/in_voxel_data" type="array">
+      <obj_property name="ElementShortName">in_voxel_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in_voxel_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/in_voxel_addr" type="array">
+      <obj_property name="ElementShortName">in_voxel_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">in_voxel_addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/in_voxel_next" type="logic">
+      <obj_property name="ElementShortName">in_voxel_next</obj_property>
+      <obj_property name="ObjectShortName">in_voxel_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/lc_max_value" type="array">
+      <obj_property name="ElementShortName">lc_max_value[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lc_max_value[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/lc_const" type="array">
+      <obj_property name="ElementShortName">lc_const[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lc_const[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/out_pos_x" type="array">
+      <obj_property name="ElementShortName">out_pos_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_pos_x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/out_pos_y" type="array">
+      <obj_property name="ElementShortName">out_pos_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_pos_y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/out_data" type="array">
+      <obj_property name="ElementShortName">out_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/valid_output" type="logic">
+      <obj_property name="ElementShortName">valid_output</obj_property>
+      <obj_property name="ObjectShortName">valid_output</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/start_values" type="array">
+      <obj_property name="ElementShortName">start_values[63:0]</obj_property>
+      <obj_property name="ObjectShortName">start_values[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/finished" type="logic">
+      <obj_property name="ElementShortName">finished</obj_property>
+      <obj_property name="ObjectShortName">finished</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/reset_finished_signal" type="logic">
+      <obj_property name="ElementShortName">reset_finished_signal</obj_property>
+      <obj_property name="ObjectShortName">reset_finished_signal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/pos_x_initial" type="array">
+      <obj_property name="ElementShortName">pos_x_initial[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pos_x_initial[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/pos_y_initial" type="array">
+      <obj_property name="ElementShortName">pos_y_initial[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pos_y_initial[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/voxel_mem_width" type="array">
+      <obj_property name="ElementShortName">voxel_mem_width[9:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_mem_width[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/voxel_mem_height" type="array">
+      <obj_property name="ElementShortName">voxel_mem_height[9:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_mem_height[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/started" type="array">
+      <obj_property name="ElementShortName">started[1:0]</obj_property>
+      <obj_property name="ObjectShortName">started[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/reg_voxel_in" type="array">
+      <obj_property name="ElementShortName">reg_voxel_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_voxel_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/bram_read_counter" type="array">
+      <obj_property name="ElementShortName">bram_read_counter[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_read_counter[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/in_voxel_data_fixed" type="array">
+      <obj_property name="ElementShortName">in_voxel_data_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in_voxel_data_fixed[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/lc_max_value_fixed" type="array">
+      <obj_property name="ElementShortName">lc_max_value_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lc_max_value_fixed[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/relative_val_fixed" type="array">
+      <obj_property name="ElementShortName">relative_val_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">relative_val_fixed[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">17</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/out_relative_val_float" type="array">
+      <obj_property name="ElementShortName">out_relative_val_float[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_relative_val_float[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/out_log_output_float" type="array">
+      <obj_property name="ElementShortName">out_log_output_float[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_log_output_float[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/out_log_output_interm_fixed" type="array">
+      <obj_property name="ElementShortName">out_log_output_interm_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_log_output_interm_fixed[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/log_output_fixed" type="array">
+      <obj_property name="ElementShortName">log_output_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">log_output_fixed[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/log_output_capped_fixed" type="array">
+      <obj_property name="ElementShortName">log_output_capped_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">log_output_capped_fixed[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/real_out_fixed_step_1" type="array">
+      <obj_property name="ElementShortName">real_out_fixed_step_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">real_out_fixed_step_1[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/real_out_fixed_step_2" type="array">
+      <obj_property name="ElementShortName">real_out_fixed_step_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">real_out_fixed_step_2[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/real_out_fixed" type="array">
+      <obj_property name="ElementShortName">real_out_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">real_out_fixed[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/mult_clock_1" type="array">
+      <obj_property name="ElementShortName">mult_clock_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_clock_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/voxel_out_fixed" type="array">
+      <obj_property name="ElementShortName">voxel_out_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_out_fixed[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/gsmax_fixed" type="array">
+      <obj_property name="ElementShortName">gsmax_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gsmax_fixed[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/lcconst_fixed" type="array">
+      <obj_property name="ElementShortName">lcconst_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lcconst_fixed[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/MAX_PIXEL_VALUE_fixed" type="array">
+      <obj_property name="ElementShortName">MAX_PIXEL_VALUE_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_PIXEL_VALUE_fixed[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/divider_int_active" type="logic">
+      <obj_property name="ElementShortName">divider_int_active</obj_property>
+      <obj_property name="ObjectShortName">divider_int_active</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/divider_int_out" type="array">
+      <obj_property name="ElementShortName">divider_int_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">divider_int_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/divider_int_divisor_step1" type="array">
+      <obj_property name="ElementShortName">divider_int_divisor_step1[14:0]</obj_property>
+      <obj_property name="ObjectShortName">divider_int_divisor_step1[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/divider_int_active_step1" type="logic">
+      <obj_property name="ElementShortName">divider_int_active_step1</obj_property>
+      <obj_property name="ObjectShortName">divider_int_active_step1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/divider_int_dividend_step1" type="array">
+      <obj_property name="ElementShortName">divider_int_dividend_step1[14:0]</obj_property>
+      <obj_property name="ObjectShortName">divider_int_dividend_step1[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/divider_int_out_step1" type="array">
+      <obj_property name="ElementShortName">divider_int_out_step1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">divider_int_out_step1[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/buffer_comp" type="array">
+      <obj_property name="ElementShortName">buffer_comp[37:0][18:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_comp[37:0][18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/buffer_comp_ptr" type="array">
+      <obj_property name="ElementShortName">buffer_comp_ptr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_comp_ptr[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/pipeline_content" type="array">
+      <obj_property name="ElementShortName">pipeline_content[67:0]</obj_property>
+      <obj_property name="ObjectShortName">pipeline_content[67:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/VOXEL_DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">VOXEL_DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VOXEL_DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/BRAM_ADDR_WIDTH" type="array">
+      <obj_property name="ElementShortName">BRAM_ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_ADDR_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider724">
+      <obj_property name="label">sc_proc</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/out_data" type="array">
+      <obj_property name="ElementShortName">out_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/valid_output" type="logic">
+      <obj_property name="ElementShortName">valid_output</obj_property>
+      <obj_property name="ObjectShortName">valid_output</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/in_voxel_data" type="array">
+      <obj_property name="ElementShortName">in_voxel_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in_voxel_data[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/in_voxel_addr" type="array">
+      <obj_property name="ElementShortName">in_voxel_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">in_voxel_addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/in_voxel_next" type="logic">
+      <obj_property name="ElementShortName">in_voxel_next</obj_property>
+      <obj_property name="ObjectShortName">in_voxel_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/start_values" type="array">
+      <obj_property name="ElementShortName">start_values[128:0]</obj_property>
+      <obj_property name="ObjectShortName">start_values[128:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/finished" type="logic">
+      <obj_property name="ElementShortName">finished</obj_property>
+      <obj_property name="ObjectShortName">finished</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/enabled" type="logic">
+      <obj_property name="ElementShortName">enabled</obj_property>
+      <obj_property name="ObjectShortName">enabled</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/output_val" type="array">
+      <obj_property name="ElementShortName">output_val[31:0]</obj_property>
+      <obj_property name="ObjectShortName">output_val[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/current_voxel" type="array">
+      <obj_property name="ElementShortName">current_voxel[31:0]</obj_property>
+      <obj_property name="ObjectShortName">current_voxel[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/scan_conv_started" type="logic">
+      <obj_property name="ElementShortName">scan_conv_started</obj_property>
+      <obj_property name="ObjectShortName">scan_conv_started</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/out_data_reg" type="array">
+      <obj_property name="ElementShortName">out_data_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data_reg[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/out_data_reg_1" type="array">
+      <obj_property name="ElementShortName">out_data_reg_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data_reg_1[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/out_data_reg_2" type="array">
+      <obj_property name="ElementShortName">out_data_reg_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data_reg_2[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/bram_read_counter" type="array">
+      <obj_property name="ElementShortName">bram_read_counter[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_read_counter[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/old_pos_x" type="array">
+      <obj_property name="ElementShortName">old_pos_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">old_pos_x[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/old_pos_y" type="array">
+      <obj_property name="ElementShortName">old_pos_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">old_pos_y[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/reg_voxel_in_rightdown" type="array">
+      <obj_property name="ElementShortName">reg_voxel_in_rightdown[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_voxel_in_rightdown[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/reg_voxel_in_down" type="array">
+      <obj_property name="ElementShortName">reg_voxel_in_down[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_voxel_in_down[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/reg_voxel_in_right" type="array">
+      <obj_property name="ElementShortName">reg_voxel_in_right[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_voxel_in_right[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/reg_voxel_in_mid" type="array">
+      <obj_property name="ElementShortName">reg_voxel_in_mid[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_voxel_in_mid[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/relative_new_pos_x_int" type="array">
+      <obj_property name="ElementShortName">relative_new_pos_x_int[31:0]</obj_property>
+      <obj_property name="ObjectShortName">relative_new_pos_x_int[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/relative_new_pos_x_norm_fixed" type="array">
+      <obj_property name="ElementShortName">relative_new_pos_x_norm_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">relative_new_pos_x_norm_fixed[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/relative_new_pos_y_fixed" type="array">
+      <obj_property name="ElementShortName">relative_new_pos_y_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">relative_new_pos_y_fixed[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/relative_new_pos_y_fixed_copytest" type="array">
+      <obj_property name="ElementShortName">relative_new_pos_y_fixed_copytest[31:0]</obj_property>
+      <obj_property name="ObjectShortName">relative_new_pos_y_fixed_copytest[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/relative_new_pos_y_norm_fixed" type="array">
+      <obj_property name="ElementShortName">relative_new_pos_y_norm_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">relative_new_pos_y_norm_fixed[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/relative_new_pos_x_forx_fixed" type="array">
+      <obj_property name="ElementShortName">relative_new_pos_x_forx_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">relative_new_pos_x_forx_fixed[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/relative_new_pos_x_fory_fixed" type="array">
+      <obj_property name="ElementShortName">relative_new_pos_x_fory_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">relative_new_pos_x_fory_fixed[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/relative_new_pos_x_fory_fixed_copy" type="array">
+      <obj_property name="ElementShortName">relative_new_pos_x_fory_fixed_copy[31:0]</obj_property>
+      <obj_property name="ObjectShortName">relative_new_pos_x_fory_fixed_copy[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/sqrt_in_fixed_1" type="array">
+      <obj_property name="ElementShortName">sqrt_in_fixed_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sqrt_in_fixed_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/sqrt_in_fixed_2" type="array">
+      <obj_property name="ElementShortName">sqrt_in_fixed_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sqrt_in_fixed_2[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/sqrt_in_fixed" type="array">
+      <obj_property name="ElementShortName">sqrt_in_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sqrt_in_fixed[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/atan_out_wire" type="array">
+      <obj_property name="ElementShortName">atan_out_wire[20:0]</obj_property>
+      <obj_property name="ObjectShortName">atan_out_wire[20:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">17</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/sqrt_out_wire" type="array">
+      <obj_property name="ElementShortName">sqrt_out_wire[20:0]</obj_property>
+      <obj_property name="ObjectShortName">sqrt_out_wire[20:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">19</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/atan_out_fixed" type="array">
+      <obj_property name="ElementShortName">atan_out_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">atan_out_fixed[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/sqrt_out_fixed" type="array">
+      <obj_property name="ElementShortName">sqrt_out_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sqrt_out_fixed[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/width_corr_fixed" type="array">
+      <obj_property name="ElementShortName">width_corr_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">width_corr_fixed[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/height_corr_fixed" type="array">
+      <obj_property name="ElementShortName">height_corr_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">height_corr_fixed[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/old_pos_x_fixed" type="array">
+      <obj_property name="ElementShortName">old_pos_x_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">old_pos_x_fixed[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/old_pos_x_fixed_copytest" type="array">
+      <obj_property name="ElementShortName">old_pos_x_fixed_copytest[31:0]</obj_property>
+      <obj_property name="ObjectShortName">old_pos_x_fixed_copytest[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/old_pos_y_fixed" type="array">
+      <obj_property name="ElementShortName">old_pos_y_fixed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">old_pos_y_fixed[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/sub_x_1" type="array">
+      <obj_property name="ElementShortName">sub_x_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sub_x_1[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/sub_x_1_1" type="array">
+      <obj_property name="ElementShortName">sub_x_1_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sub_x_1_1[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/sub_x_1_2" type="array">
+      <obj_property name="ElementShortName">sub_x_1_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sub_x_1_2[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/sub_x_2" type="array">
+      <obj_property name="ElementShortName">sub_x_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sub_x_2[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/sub_x_2_1" type="array">
+      <obj_property name="ElementShortName">sub_x_2_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sub_x_2_1[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/sub_x_2_2" type="array">
+      <obj_property name="ElementShortName">sub_x_2_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sub_x_2_2[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/divider_int_active_x" type="logic">
+      <obj_property name="ElementShortName">divider_int_active_x</obj_property>
+      <obj_property name="ObjectShortName">divider_int_active_x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/divider_int_out_x" type="array">
+      <obj_property name="ElementShortName">divider_int_out_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">divider_int_out_x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/divider_int_active_y" type="logic">
+      <obj_property name="ElementShortName">divider_int_active_y</obj_property>
+      <obj_property name="ObjectShortName">divider_int_active_y</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/divider_int_out_y" type="array">
+      <obj_property name="ElementShortName">divider_int_out_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">divider_int_out_y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/buffer_atan_sqrt_1" type="array">
+      <obj_property name="ElementShortName">buffer_atan_sqrt_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_atan_sqrt_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/buffer_atan_sqrt_2" type="array">
+      <obj_property name="ElementShortName">buffer_atan_sqrt_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_atan_sqrt_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/buffer_sqrt_1" type="array">
+      <obj_property name="ElementShortName">buffer_sqrt_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_sqrt_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/buffer_final_mult_1" type="array">
+      <obj_property name="ElementShortName">buffer_final_mult_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_final_mult_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/buffer_final_mult_2" type="array">
+      <obj_property name="ElementShortName">buffer_final_mult_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_final_mult_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/buffer_final_mult_3" type="array">
+      <obj_property name="ElementShortName">buffer_final_mult_3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_final_mult_3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/buffer_bubble_1" type="array">
+      <obj_property name="ElementShortName">buffer_bubble_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_bubble_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/buffer_bubble_2" type="array">
+      <obj_property name="ElementShortName">buffer_bubble_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_bubble_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/buffer_bubble_3" type="array">
+      <obj_property name="ElementShortName">buffer_bubble_3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_bubble_3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/buffer_bubble_4" type="array">
+      <obj_property name="ElementShortName">buffer_bubble_4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_bubble_4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/buffer_bubble_5" type="array">
+      <obj_property name="ElementShortName">buffer_bubble_5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_bubble_5[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/buffer_bubble_6" type="array">
+      <obj_property name="ElementShortName">buffer_bubble_6[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_bubble_6[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/buffer_bubble_7" type="array">
+      <obj_property name="ElementShortName">buffer_bubble_7[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_bubble_7[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/buffer_bubble_8" type="array">
+      <obj_property name="ElementShortName">buffer_bubble_8[31:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_bubble_8[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/pipeline_content" type="array">
+      <obj_property name="ElementShortName">pipeline_content[60:0]</obj_property>
+      <obj_property name="ObjectShortName">pipeline_content[60:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/pipeline_atan_test_result" type="array">
+      <obj_property name="ElementShortName">pipeline_atan_test_result[13:0]</obj_property>
+      <obj_property name="ObjectShortName">pipeline_atan_test_result[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/pipeline_sqrt_test_result" type="array">
+      <obj_property name="ElementShortName">pipeline_sqrt_test_result[14:0]</obj_property>
+      <obj_property name="ObjectShortName">pipeline_sqrt_test_result[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/pos_x_initial" type="array">
+      <obj_property name="ElementShortName">pos_x_initial[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pos_x_initial[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/pos_y_initial" type="array">
+      <obj_property name="ElementShortName">pos_y_initial[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pos_y_initial[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/local_img_width" type="array">
+      <obj_property name="ElementShortName">local_img_width[31:0]</obj_property>
+      <obj_property name="ObjectShortName">local_img_width[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/local_img_height" type="array">
+      <obj_property name="ElementShortName">local_img_height[31:0]</obj_property>
+      <obj_property name="ObjectShortName">local_img_height[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/new_x" type="array">
+      <obj_property name="ElementShortName">new_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">new_x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/new_y" type="array">
+      <obj_property name="ElementShortName">new_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">new_y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/voxel_width" type="array">
+      <obj_property name="ElementShortName">voxel_width[31:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_width[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/voxel_height" type="array">
+      <obj_property name="ElementShortName">voxel_height[31:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_height[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/image_width" type="array">
+      <obj_property name="ElementShortName">image_width[31:0]</obj_property>
+      <obj_property name="ObjectShortName">image_width[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/image_height" type="array">
+      <obj_property name="ElementShortName">image_height[31:0]</obj_property>
+      <obj_property name="ObjectShortName">image_height[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/reg_enabled" type="logic">
+      <obj_property name="ElementShortName">reg_enabled</obj_property>
+      <obj_property name="ObjectShortName">reg_enabled</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/VOXEL_DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">VOXEL_DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VOXEL_DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc/PIXEL_DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">PIXEL_DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PIXEL_DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider781">
+      <obj_property name="label">identity</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/in_voxel_data" type="array">
+      <obj_property name="ElementShortName">in_voxel_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in_voxel_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/in_voxel_addr" type="array">
+      <obj_property name="ElementShortName">in_voxel_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">in_voxel_addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/in_voxel_next" type="logic">
+      <obj_property name="ElementShortName">in_voxel_next</obj_property>
+      <obj_property name="ObjectShortName">in_voxel_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/out_pixel" type="array">
+      <obj_property name="ElementShortName">out_pixel[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_pixel[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/out_pos_x" type="array">
+      <obj_property name="ElementShortName">out_pos_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_pos_x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/out_pos_y" type="array">
+      <obj_property name="ElementShortName">out_pos_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_pos_y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/reg_voxel_in" type="array">
+      <obj_property name="ElementShortName">reg_voxel_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_voxel_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/valid_data" type="logic">
+      <obj_property name="ElementShortName">valid_data</obj_property>
+      <obj_property name="ObjectShortName">valid_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/finished" type="logic">
+      <obj_property name="ElementShortName">finished</obj_property>
+      <obj_property name="ObjectShortName">finished</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/enable" type="logic">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/bram_read_counter" type="array">
+      <obj_property name="ElementShortName">bram_read_counter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_read_counter[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/pos_x" type="array">
+      <obj_property name="ElementShortName">pos_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pos_x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/pos_y" type="array">
+      <obj_property name="ElementShortName">pos_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pos_y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/started" type="logic">
+      <obj_property name="ElementShortName">started</obj_property>
+      <obj_property name="ObjectShortName">started</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/VOXEL_DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">VOXEL_DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VOXEL_DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/VOXEL_MEM_HEIGHT" type="array">
+      <obj_property name="ElementShortName">VOXEL_MEM_HEIGHT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VOXEL_MEM_HEIGHT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/VOXEL_MEM_WIDTH" type="array">
+      <obj_property name="ElementShortName">VOXEL_MEM_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VOXEL_MEM_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/PIXEL_DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">PIXEL_DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PIXEL_DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_op/BRAM_ADDR_WIDTH" type="array">
+      <obj_property name="ElementShortName">BRAM_ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_ADDR_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider6062">
+      <obj_property name="label">log_out_all</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/VOXEL_DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">VOXEL_DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VOXEL_DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/finished" type="logic">
+      <obj_property name="ElementShortName">finished</obj_property>
+      <obj_property name="ObjectShortName">finished</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/lc_max_value" type="array">
+      <obj_property name="ElementShortName">lc_max_value[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lc_max_value[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/out_data" type="array">
+      <obj_property name="ElementShortName">out_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/out_pos_x" type="array">
+      <obj_property name="ElementShortName">out_pos_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_pos_x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/out_pos_y" type="array">
+      <obj_property name="ElementShortName">out_pos_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_pos_y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/pos_x_initial" type="array">
+      <obj_property name="ElementShortName">pos_x_initial[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pos_x_initial[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/pos_y_initial" type="array">
+      <obj_property name="ElementShortName">pos_y_initial[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pos_y_initial[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/reset_finished_signal" type="logic">
+      <obj_property name="ElementShortName">reset_finished_signal</obj_property>
+      <obj_property name="ObjectShortName">reset_finished_signal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/start_values" type="array">
+      <obj_property name="ElementShortName">start_values[63:0]</obj_property>
+      <obj_property name="ObjectShortName">start_values[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/started" type="array">
+      <obj_property name="ElementShortName">started[1:0]</obj_property>
+      <obj_property name="ObjectShortName">started[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/valid_output" type="logic">
+      <obj_property name="ElementShortName">valid_output</obj_property>
+      <obj_property name="ObjectShortName">valid_output</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/voxel_mem_height" type="array">
+      <obj_property name="ElementShortName">voxel_mem_height[9:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_mem_height[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/log_comp/voxel_mem_width" type="array">
+      <obj_property name="ElementShortName">voxel_mem_width[9:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_mem_width[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider6817">
+      <obj_property name="label">bram_sc</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/identity_voxel_next" type="logic">
+      <obj_property name="ElementShortName">identity_voxel_next</obj_property>
+      <obj_property name="ObjectShortName">identity_voxel_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/lc_voxel_next" type="logic">
+      <obj_property name="ElementShortName">lc_voxel_next</obj_property>
+      <obj_property name="ObjectShortName">lc_voxel_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/sc_proc_voxel_next" type="logic">
+      <obj_property name="ElementShortName">sc_proc_voxel_next</obj_property>
+      <obj_property name="ObjectShortName">sc_proc_voxel_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/voxel_input_stream_coord_x" type="array">
+      <obj_property name="ElementShortName">voxel_input_stream_coord_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_input_stream_coord_x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/voxel_input_stream_coord_y" type="array">
+      <obj_property name="ElementShortName">voxel_input_stream_coord_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">voxel_input_stream_coord_y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/bram_voxel_mem_0/addra" type="array">
+      <obj_property name="ElementShortName">addra[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/bram_voxel_mem_0/addrb" type="array">
+      <obj_property name="ElementShortName">addrb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/bram_voxel_mem_0/clka" type="logic">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/bram_voxel_mem_0/dina" type="array">
+      <obj_property name="ElementShortName">dina[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/bram_voxel_mem_0/dinb" type="array">
+      <obj_property name="ElementShortName">dinb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dinb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/bram_voxel_mem_0/douta" type="array">
+      <obj_property name="ElementShortName">douta[31:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/bram_voxel_mem_0/doutb" type="array">
+      <obj_property name="ElementShortName">doutb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/bram_write_enable" type="logic">
+      <obj_property name="ElementShortName">bram_write_enable</obj_property>
+      <obj_property name="ObjectShortName">bram_write_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/bram_voxel_mem_0/wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ScanConverter_AXI_Interface_inst/ScanConverter_inst/bram_voxel_mem_0/web" type="logic">
+      <obj_property name="ElementShortName">web</obj_property>
+      <obj_property name="ObjectShortName">web</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider404">
+      <obj_property name="label">tests</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+</wave_config>

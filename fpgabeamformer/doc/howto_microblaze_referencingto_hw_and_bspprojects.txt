@@ -1,0 +1,17 @@
+****MicroBlaze Project Referencing and Linkage to HW and BSP projects:
+
+1. Create your new “Hardware Platform Specification” project based on your new bitstream and hdf files.
+
+2. Create your new “Board Support Package” project with the same settings mentioned in howto.txt.
+
+3. Then, for the application project we have (for example, “demo_project_hdmi” or whatever), right-click —>properties —> extend the “C/C++ Build” tab —> “Settings”.
+
+4. By clicking the “Settings”, and after choosing the “Tool Settings” tab:
+
+   4.a. Click “MicroBlaze gcc compiler/Inferred Options/ Software Platform” —> in the “Software Platform Include Path” tab, click the “Edit” path button and browse the following path inside your created bsp project: "../your_bsp_project/sys_mb/include”.
+
+   4.b. Then, click “MicroBlaze gcc linker/Libraries” —> in the “Library search path (-L)” tab, click the “Edit” path button and browse the following path inside your created bsp project: "../your_bsp_project/sys_mb/lib”. Additionally, your “Libraries (-l)” tab should be pointed to “HDMI_MicroBlazeLib” indicating the inclusion of the HDMI library.
+
+   4.c. Also you can check that in “MicroBlaze gcc linker/Inferred Options/Software Platform”  —> in the “Software Platform Library Path”, we linked to the following path, which point to the microblaze library directory inside the application project itself, “${workspace_loc:/${ProjName}/library/microblaze/lib}”.
+
+5. In addition, in the main menu of the “Properties” choice, click “Project References” where you should uncheck any reference to any other “bsp” or “hw” projects than the ones you created with the updated bitstream and hdf files (both hw and bsp projects)!
