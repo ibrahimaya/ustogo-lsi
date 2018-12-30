@@ -117,11 +117,11 @@ static const unsigned long detailedTiming[7][9] =
 void DDRVideoWr(unsigned short horizontalActiveTime,
 				unsigned short verticalActiveTime, uint32_t img_width, uint32_t img_height)
 {
-	unsigned long  pixel      = 0;
-	unsigned long  backup     = 0;
-	unsigned short line       = 0;
-	unsigned long  index      = 0;
-	unsigned char  repetition = 0;
+	//unsigned long  pixel      = 0;
+	//unsigned long  backup     = 0;
+	//unsigned short line       = 0;
+	//unsigned long  index      = 0;
+	//unsigned char  repetition = 0;
 
 	uint32_t start_x = horizontalActiveTime/2 - img_width/2;
 	uint32_t start_y = verticalActiveTime/2 - img_height/2;
@@ -137,8 +137,8 @@ void DDRVideoWr(unsigned short horizontalActiveTime,
 				Xil_Out32((VIDEO_BASEADDR+( (y*horizontalActiveTime+x)*4 )), (Xil_In32(DDR_BASEADDR+0x8000000+(relative_y*img_width+relative_x)*4) & 0xffffff));
 
 			}
-			else
-				Xil_Out32((VIDEO_BASEADDR+( (y*horizontalActiveTime+x)*4 )), 0xF7F7F7F);//(IMG_DATA[y*200+x] & 0xffffff));
+			//else  // This got optimized already by assigning that gray values in "SetVideoResolution" function
+			//	Xil_Out32((VIDEO_BASEADDR+( (y*horizontalActiveTime+x)*4 )), 0xF7F7F7F);//(IMG_DATA[y*200+x] & 0xffffff));
 		}
 	}
 
@@ -311,6 +311,21 @@ void SetVideoResolution(unsigned char resolution, uint32_t img_width, uint32_t i
 					   detailedTiming[resolution][V_BLANKING_TIME],
 					   detailedTiming[resolution][V_SYNC_OFFSET],
 					   detailedTiming[resolution][V_SYNC_WIDTH_PULSE], img_width, img_height);
+
+    
+    // Assign Gray value to the region outside the img_width and img_height based on the set resolution whenever we set or change it
+    uint32_t horizontalActiveTime = detailedTiming[resolution][1];
+    uint32_t verticalActiveTime = detailedTiming[resolution][5];
+    uint32_t start_x = horizontalActiveTime/2 - img_width/2;
+    uint32_t start_y = verticalActiveTime/2 - img_height/2;
+    uint32_t x=0, y=0;
+    for(y = 0; y <= verticalActiveTime; y++){
+        for(x = 0; x <= horizontalActiveTime; x++){
+            if (x < start_x || x >= start_x+img_width || y < start_y || y >= start_y+img_height){
+                Xil_Out32((VIDEO_BASEADDR+( (y*horizontalActiveTime+x)*4 )), 0xF7F7F7F);//(IMG_DATA[y*200+x] & 0xffffff));
+            }
+        }
+    }
 }
 
 /***************************************************************************//**
